@@ -211,7 +211,7 @@ ALIGNBOTTOM=No
 
 [Section]
 Index=0
-Name="circuit2"
+Name="c1"
 Type=Main
 Enable=True
 CurrentPage 0=0
