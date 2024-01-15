@@ -1,0 +1,51 @@
+
+1.
+Для доавления компонента, необходимо добавить его референсную форму в *.cir  программу для симуляций в *.inx ровно ОДИН раз для его инициализации.
+
+Далее необходимо добавить сам компонент
+---------------
+[Comp]
+Name=Or2
+Px=296,176
+---------------
+со списком аттрибутов для него
+ON=ключи
+V=значение
+
+
+[Comp]
+Name=Or2
+Px=296,176
+
+[Attr]
+ON=15,4,PART
+V=U2
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
