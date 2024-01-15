@@ -108,7 +108,7 @@ Name=Or2
 Px=296,176
 
 [Attr]
-ON=15,4,PART
+ON=15,-20,PART
 V=U2
 Style=8192
 
@@ -337,7 +337,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=334,175
+Px=316,192
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
