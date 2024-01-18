@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=2
+NLCnt=3
 TXCnt=0
 
 [shapedef]
@@ -139,6 +139,9 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
+
+[Wire]
+Pxs=240,184,296,192
 
 [Schematic]
 CurrentSection 0=0
@@ -337,7 +340,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=316,192
+Px=296,195
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000

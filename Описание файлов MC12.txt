@@ -53,3 +53,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
+
+2.
+NLCnt += 1
