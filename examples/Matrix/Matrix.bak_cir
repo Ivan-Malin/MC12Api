@@ -7,29 +7,28 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=10
-TXCnt=1
+NLCnt=15
+TXCnt=0
+
+[shapedef]
+Name=And2
+Root="And.root",0,0,0
+
+[shapedef]
+Name=And.root
+Line=0,0,9,0
+Line=0,16,9,16
+Line=9,20,9,-4
+Line=27,20,9,20
+Line=9,-4,27,-4
+Line=40,8,48,8
+Arc=12,-4,40,20 , 28,32,28,-16
 
 [shapedef]
 Name=Fixed
 Line=8,0,32,0
 Line=8,0,0,-8
 Line=8,0,0,8
-
-[shapedef]
-Name=Inv
-Root="Inv.root",0,0,0
-
-[shapedef]
-Name=Inv.root
-Line=8,-16,8,16
-Line=8,-16,40,0
-Line=8,16,40,0
-Line=0,0,8,0
-Ellipse=40,-2,44,2
-FColor=None
-Line=44,0,47,0
-Line=46,0,48,0
 
 [shapedef]
 Name=LatchSR
@@ -53,35 +52,6 @@ Line=24,-12,24,-24
 Name=LedAnim
 Led=-8,-8,8,8
 Line=0,8,0,24
-
-[shapedef]
-Name=StimClock
-Arc=50,-8,62,8 , 56,8,62,0
-Arc=50,-8,62,8 , 62,0,56,-8
-Line=13,8,57,8
-Arc=8,-8,18,8 , 13,-8,8,0
-Ellipse=53,-3,59,3
-Line=64,0,72,0
-Arc=8,-8,18,8 , 8,0,13,8
-Line=13,-8,57,-8
-Line=56,0,64,0
-Line=16,4,20,4
-Line=20,4,20,-4
-Line=20,-4,24,-4
-Line=24,-4,24,4
-Line=24,4,28,4
-Line=28,4,28,-4
-Line=28,-4,32,-4
-Line=32,-4,32,4
-Line=32,4,36,4
-Line=36,4,36,-4
-Line=36,-4,40,-4
-Line=40,-4,40,4
-Line=40,4,44,4
-Line=44,4,44,-4
-Line=44,-4,48,-4
-Line=48,-4,48,4
-Line=48,4,52,4
 
 [compdef]
 Name=SRFF
@@ -113,18 +83,6 @@ PinCnt=1
 Pin="Out",4,0,-8,-3
 
 [compdef]
-Name=DClock
-Definition=Macro
-Shape=StimClock
-Mask=4096
-Used=12
-memo=Digital Clock Stimulus Macro
-Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
-Label Offset=29,10,12,21
-PinCnt=1
-Pin="Out",d,9,0
-
-[compdef]
 Name=Animated Digital LED
 Definition=DIGITAL LED
 Shape=LedAnim
@@ -136,17 +94,18 @@ PinCnt=1
 Pin="In",0,3,5,0
 
 [compdef]
-Name=Inverter
-Definition=INV
-Shape=Inv
-Mask=4611
-Used=42
-Data1=1
-memo=Generic Inverter Gate
-Label Offset=12,-6,11,21
-PinCnt=2
-Pin="In",0,0,-4,-2
-Pin="Out",6,0,-10,-2
+Name=And2
+Definition=AND
+Shape=And2
+Mask=4867
+Used=26
+Data1=2
+memo=2 Input Generic AND Gate
+Label Offset=12,21,8,8
+PinCnt=3
+Pin="In0",0,0,-6,-1
+Pin="In1",0,2,-6,-1
+Pin="Out",6,1,-7,-1
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 130,130,1024,616
@@ -161,7 +120,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 156,156,1246,642
+Window Placement in Transient Analysis=0,1, -1,-1, -8,-31, 0,0,660,716
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -258,42 +217,11 @@ Pxs=464,208,504,208
 Pxs=504,208,504,256
 
 [Comp]
-Name=DClock
-Px=296,184
-
-[Attr]
-ON=29,10,PART
-V=X1
-Style=8192
-
-[Attr]
-ON=29,24,FILE
-V=DClock
-
-[Attr]
-ON=29,52,Param:ZEROWIDTH
-V=50N
-
-[Attr]
-ON=29,66,Param:ONEWIDTH
-V=50N
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Wire]
-Pxs=368,184,376,184
-
-[Wire]
-Pxs=376,184,464,184
-
-[Comp]
 Name=Animated Digital LED
 Px=544,160
 
 [Attr]
-ON=11,-14,PART
+ON=-29,-9,PART
 V=U5
 Style=8192
 
@@ -317,51 +245,66 @@ V=$G_DGND
 ON=0,0,PACKAGE
 V
 
+[Wire]
+Pxs=448,232,464,232
+
 [Comp]
-Name=Inverter
-Px=464,184
-Rot=1
+Name=And2
+Px=416,176
 
 [Attr]
-ON=-29,-8,PART
+ON=15,2,PART
 V=U6
 Style=8192
 
 [Attr]
-ON=-68,-22,TIMING MODEL
+ON=-64,-36,TIMING MODEL
 V=D0_GATE
 
 [Attr]
-ON=-59,-36,I/O MODEL
+ON=-55,-50,I/O MODEL
 V=IO_STD
 
 [Attr]
-ON=-20,-50,MNTYMXDLY
+ON=-16,-64,MNTYMXDLY
 V=0
 
 [Attr]
-ON=-20,-64,IO_LEVEL
+ON=-16,-78,IO_LEVEL
 V=0
 
 [Attr]
-ON=-76,-78,POWER NODE
+ON=-72,-92,POWER NODE
 V=$G_DPWR
 
 [Attr]
-ON=-73,-92,GROUND NODE
+ON=-69,-106,GROUND NODE
 V=$G_DGND
 
 [Attr]
 ON=0,0,PACKAGE
 V
 
-[Grid Text]
-Text="Q3"
-Px=376,184
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
+[Wire]
+Pxs=400,176,416,176
+
+[Wire]
+Pxs=408,192,416,192
+
+[Wire]
+Pxs=408,192,408,264
+
+[Wire]
+Pxs=400,136,400,176
+
+[Wire]
+Pxs=400,136,568,136
+
+[Wire]
+Pxs=352,136,400,136
+
+[Wire]
+Pxs=408,112,408,192
 
 [Schematic]
 CurrentSection 0=0
@@ -560,7 +503,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=415,300
+Px=513,105
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -624,6 +567,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
+SB 0=23,17
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -670,6 +614,8 @@ Text=* .Model BJT1 NPN (RE=12 LOT/1/GAUSS=30% DEV/2/UNIFORM=2%)
 Text=*
 Text=* A .cir file is typically found in the data directory
 Text=*
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIGIO.LIB
+Text=.MODEL D0_GATE UGATE ()
 
 [InfoPage]
 InfoPage=True
@@ -688,7 +634,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=2,3, -1,-1, -8,-31, 156,156,1246,642
+Window Placement=0,1, -1,-1, -8,-31, 660,0,1320,716
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -753,15 +699,15 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=4
+MonMaxShow=2
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
 MonExprYWidth=367
 MonRangeXWidth=90
 MonRangeYWidth=90
-AnimateWait=None
-AnimateWaitTime=500
+AnimateWait=Time
+AnimateWaitTime=10
 AnimatePressAfter=0
 Save_For_Future=No
 Reduce_Display=1
@@ -934,56 +880,6 @@ RunOption=Normal
 Temperature Type=Linear
 Accumulate Plots=False
 IgnoreExprErrors=False
-
-[WaveForm]
-Analysis=Transient
-Plt=1
-AliasID=1
-XExp=T
-YExp=d(Q2)
-XRng=1e-6
-YRng=Auto
-Options=LINEARX,LINEARY
-Range Grid X=2e-7
-Enable=Enable
-Line Color=#0000FF
-Text Color=#0000FF
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
-
-[WaveForm]
-Analysis=Transient
-Plt=1
-AliasID=2
-XExp=T
-YExp=d(Q1)
-XRng=1e-6
-YRng=Auto
-Options=LINEARX,LINEARY
-Range Grid X=2e-7
-Enable=Enable
-Line Color=#FF0000
-Text Color=#FF0000
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
 
 [WaveForm]
 Analysis=Transient
