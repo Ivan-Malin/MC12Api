@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=13
-TXCnt=8
+NLCnt=32
+TXCnt=11
 
 [shapedef]
 Name=590
@@ -40,6 +40,40 @@ Line=8,0,0,-8
 Line=8,0,0,8
 
 [shapedef]
+Name=Or.root
+Line=42,8,48,8
+Line=0,0,10,0
+Line=0,16,10,16
+Line=24,-4,6,-4
+Line=6,20,24,20
+Arc=5,-4,43,34 , 42,8,24,-4
+Arc=0,-4,12,20 , 6,20,6,-4
+Arc=5,-18,43,20 , 24,20,42,8
+
+[shapedef]
+Name=STIM1
+Arc=50,-8,62,8 , 56,8,62,0
+Arc=50,-8,62,8 , 62,0,56,-8
+Line=13,8,57,8
+Arc=8,-8,18,8 , 13,-8,8,0
+Ellipse=53,-3,59,3
+Line=64,0,72,0
+Arc=8,-8,18,8 , 8,0,13,8
+Line=13,-8,57,-8
+Line=56,0,64,0
+Line=17,4,22,4
+Line=22,4,22,-5
+Line=22,-5,29,-5
+Line=29,-5,29,4
+Line=29,4,33,4
+Line=33,4,33,-5
+Line=33,-5,36,-5
+Line=36,-5,36,4
+Line=36,4,41,4
+Line=41,4,41,-5
+Line=41,-5,43,-5
+
+[shapedef]
 Name=StimClock
 Arc=50,-8,62,8 , 56,8,62,0
 Arc=50,-8,62,8 , 62,0,56,-8
@@ -68,12 +102,21 @@ Line=44,-4,48,-4
 Line=48,-4,48,4
 Line=48,4,52,4
 
+[shapedef]
+Name=Xor2
+Root="Xor.root",0,-16,0
+
+[shapedef]
+Name=Xor.root
+Root="Or.root",0,16,0
+Arc=-4,12,8,36 , 2,36,2,12
+
 [compdef]
 Name=74ACT590
 Definition=Subckt
 Shape=590
 Mask=20608
-Used=1
+Used=5
 memo=8-Bit Binary Counter with Registered 3-State Outputs
 Label Offset=33,160,-1,26
 PinCnt=14
@@ -97,7 +140,7 @@ Name=DClock
 Definition=Macro
 Shape=StimClock
 Mask=4096
-Used=14
+Used=15
 memo=Digital Clock Stimulus Macro
 Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
 Label Offset=29,10,12,21
@@ -109,11 +152,37 @@ Name=Fixed Digital
 Definition=DIGITAL STATE
 Shape=Fixed
 Mask=3840
-Used=94
+Used=159
 memo=Provides a fixed digital state
 Label Offset=-14,-7,-6,-27
 PinCnt=1
 Pin="Out",4,0,-8,-3
+
+[compdef]
+Name=Stim1
+Definition=STIM
+Shape=STIM1
+Mask=5123
+Used=19
+Data2=1
+memo=1-Bit Digital Stimulus
+Label Offset=-10,-6,13,20
+PinCnt=1
+Pin="Out0",9,0,-5,-3
+
+[compdef]
+Name=Xor
+Definition=XOR
+Shape=Xor2
+Mask=4096
+Used=4
+Data1=2
+memo=Generic XOR Gate
+Label Offset=14,4,8,11
+PinCnt=3
+Pin="In1",0,0,-10,-3
+Pin="In2",0,2,-10,-1
+Pin="Out",6,1
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 0,52,658,538
@@ -132,7 +201,7 @@ Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 0,52,658,538
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
-Show Nodes=True
+Show Nodes=False
 Show Voltages=False
 Show Current=False
 Show Power=False
@@ -146,7 +215,7 @@ Show Grid Text=True
 [Comp]
 Name=74ACT590
 Style=ShowPinText
-Px=400,176
+Px=608,224
 
 [Attr]
 ON=33,160,PART
@@ -163,7 +232,7 @@ V=DIP20
 
 [Comp]
 Name=DClock
-Px=280,208
+Px=424,248
 
 [Attr]
 ON=29,10,PART
@@ -187,17 +256,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=384,256,440,256
+Pxs=592,304,648,304
 
 [Wire]
-Pxs=352,208,384,208
-
-[Wire]
-Pxs=384,224,416,224
+Pxs=592,272,624,272
 
 [Comp]
 Name=Fixed Digital
-Px=432,192
+Px=640,240
 Rot=6
 
 [Attr]
@@ -231,7 +297,7 @@ V
 
 [Comp]
 Name=Fixed Digital
-Px=440,224
+Px=648,272
 Rot=7
 
 [Attr]
@@ -264,26 +330,325 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=416,192,416,224
+Pxs=624,240,624,272
 
 [Wire]
-Pxs=384,192,400,192
+Pxs=592,240,608,240
 
 [Wire]
-Pxs=400,192,416,192
+Pxs=608,240,624,240
 
 [Wire]
-Pxs=384,240,456,240
+Pxs=592,288,664,288
 
 [Wire]
-Pxs=456,208,456,240
+Pxs=664,256,664,288
 
 [Wire]
-Pxs=384,208,456,208
+Pxs=592,256,664,256
+
+[Wire]
+Pxs=712,240,768,240
+
+[Wire]
+Pxs=768,240,768,256
+
+[Comp]
+Name=Stim1
+Px=544,336
+Rot=5
+
+[Attr]
+ON=-10,-8,PART
+V=U6
+Style=8192
+
+[Attr]
+ON=-10,-22,FORMAT
+V=1
+
+[Attr]
+ON=-10,-36,COMMAND
+V=SET
+
+[Attr]
+ON=-10,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-10,-64,TIMESTEP
+V=0
+
+[Attr]
+ON=-10,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-10,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-10,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Xor
+Px=544,248
+
+[Attr]
+ON=14,4,PART
+V=U8
+Style=8192
+
+[Attr]
+ON=14,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=14,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=14,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=14,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=14,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=14,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=496,248,544,248
+
+[Comp]
+Name=74ACT590
+Style=ShowPinText
+Px=832,232
+
+[Attr]
+ON=33,160,PART
+V=X3
+Style=8192
+
+[Attr]
+ON=33,174,NAME
+V=74ACT590
+
+[Attr]
+ON=33,202,PACKAGE
+V=DIP20
+
+[Wire]
+Pxs=816,312,872,312
+
+[Wire]
+Pxs=816,280,848,280
+
+[Comp]
+Name=Fixed Digital
+Px=864,248
+Rot=6
+
+[Attr]
+ON=-11,-27,PART
+V=U9
+
+[Attr]
+ON=-2,-13,VALUE
+V=0
+Style=8192
+
+[Attr]
+ON=-41,1,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-2,15,IO_LEVEL
+V=0
+
+[Attr]
+ON=-58,29,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-55,43,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Fixed Digital
+Px=872,280
+Rot=7
+
+[Attr]
+ON=-11,-27,PART
+V=U10
+
+[Attr]
+ON=-2,-13,VALUE
+V=1
+Style=8192
+
+[Attr]
+ON=-41,1,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-2,15,IO_LEVEL
+V=0
+
+[Attr]
+ON=-58,29,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-55,43,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=848,248,848,280
+
+[Wire]
+Pxs=816,248,832,248
+
+[Wire]
+Pxs=832,248,848,248
+
+[Wire]
+Pxs=816,296,888,296
+
+[Wire]
+Pxs=888,264,888,296
+
+[Wire]
+Pxs=816,264,888,264
+
+[Wire]
+Pxs=936,248,992,248
+
+[Wire]
+Pxs=992,248,992,264
+
+[Comp]
+Name=Stim1
+Px=768,344
+Rot=5
+
+[Attr]
+ON=-10,-8,PART
+V=U11
+Style=8192
+
+[Attr]
+ON=-10,-22,FORMAT
+V=1
+
+[Attr]
+ON=-10,-36,COMMAND
+V=SET
+
+[Attr]
+ON=-10,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-10,-64,TIMESTEP
+V=0
+
+[Attr]
+ON=-10,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-10,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-10,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Xor
+Px=768,256
+
+[Attr]
+ON=14,4,PART
+V=U12
+Style=8192
+
+[Attr]
+ON=14,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=14,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=14,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=14,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=14,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=14,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Grid Text]
+Text="CLK"
+Px=496,248
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="QR"
+Px=712,240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
 
 [Grid Text]
 Text="Q1"
-Px=504,208
+Px=936,264
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -291,7 +656,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q2"
-Px=504,224
+Px=936,280
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -299,7 +664,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q3"
-Px=504,240
+Px=936,296
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -307,7 +672,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q4"
-Px=504,256
+Px=936,312
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -315,7 +680,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q5"
-Px=504,272
+Px=936,328
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -323,7 +688,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q6"
-Px=504,288
+Px=936,344
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -331,7 +696,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q7"
-Px=504,304
+Px=936,360
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -339,7 +704,15 @@ CBorder=None
 
 [Grid Text]
 Text="Q8"
-Px=504,320
+Px=936,376
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="QR1"
+Px=936,248
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -353,7 +726,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=0.66666666666666663
+Scale=2
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -541,9 +914,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=299,73
-Scale 3=0.66666666666666663
-Px=370,237
+SB 3=179,0
+Scale 3=2
+Px=767,314
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -633,6 +1006,11 @@ Search Color=#FFFF00
 [Text Area]
 Section=0
 Page=1
+Text=
+Text=.define SET
+Text= +0ns 0
+Text= ++1ns 1
+Text= ++1ns 0 
 
 [Text Area]
 Section=0
@@ -736,7 +1114,7 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=9
+MonMaxShow=11
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -906,7 +1284,7 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=40u
+TMax=80u
 TStart=0
 TStep=0
 NPts=51
@@ -924,10 +1302,10 @@ Plt=1
 AliasID=1
 XExp=T
 YExp=d(Q1)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -949,10 +1327,10 @@ Plt=1
 AliasID=2
 XExp=T
 YExp=d(Q2)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -974,10 +1352,10 @@ Plt=1
 AliasID=3
 XExp=T
 YExp=d(Q3)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
@@ -999,10 +1377,10 @@ Plt=1
 AliasID=4
 XExp=T
 YExp=d(Q4)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#FF00FF
 Text Color=#FF00FF
@@ -1024,10 +1402,10 @@ Plt=1
 AliasID=5
 XExp=T
 YExp=d(Q5)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#000000
 Text Color=#000000
@@ -1049,10 +1427,10 @@ Plt=1
 AliasID=7
 XExp=T
 YExp=d(Q6)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1074,10 +1452,10 @@ Plt=1
 AliasID=6
 XExp=T
 YExp=d(Q7)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1099,13 +1477,63 @@ Plt=1
 AliasID=8
 XExp=T
 YExp=d(Q8)
-XRng=4e-5
+XRng=8e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
+Range Grid X=1.6e-5
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=9
+XExp=T
+YExp=d(QR)
+XRng=8e-5
+YRng=Auto
+Options=LINEARX,LINEARY
+Range Grid X=1.6e-5
+Enable=Enable
+Line Color=#FF00FF
+Text Color=#FF00FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=10
+XExp=T
+YExp=d(CLK)
+XRng=8e-5
+YRng=Auto
+Options=LINEARX,LINEARY
+Range Grid X=1.6e-5
+Enable=Enable
+Line Color=#000000
+Text Color=#000000
 Rainbow=False
 VFmtX=3
 VFmtY=3

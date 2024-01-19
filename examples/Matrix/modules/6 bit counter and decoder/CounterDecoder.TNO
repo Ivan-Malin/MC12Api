@@ -2,12 +2,12 @@
 ***                       Micro-Cap 12.2.0.5 (64 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
-***                      Transient Analysis of Counter                       ***
-***                            19.01.2024 0:58:05                            ***
+***                   Transient Analysis of CounterDecoder                   ***
+***                            19.01.2024 1:59:08                            ***
 ********************************************************************************
 Limits
 ======
-Maximum Run Time           40u
+Maximum Run Time           80u
 Output Start Time (tstart) 0
 Maximum Time Step          0
 Number of Points           51
@@ -34,7 +34,10 @@ DC Operating Point Digital States
 =================================
 Node       State Node       State Node       State Node       State
 1          0     2          0     3          1     QR         1    
-Q1         0     Q2         0     Q3         0     Q4         0    
+5          0     6          0     7          0     8          0    
+9          0     10         0     11         0     12         0    
+CLK        0     14         0     15         1     16         0    
+Q1         1     Q2         0     Q3         0     Q4         0    
 Q5         0     Q6         0     Q7         0     Q8         0    
 X1.QTA     0     X1.QTB     0     X1.QTC     0     X1.QTD     0    
 X1.QTE     0     X1.QTF     0     X1.QTG     0     X1.QTH     0    
@@ -46,5 +49,7 @@ X1.QTFBAR  1     X1.QTGBAR  1     X1.QTHBAR  1     X1.QAO     0
 X1.QBO     0     X1.QCO     0     X1.QDO     0     X1.QEO     0    
 X1.QFO     0     X1.QGO     0     X1.QHO     0     X1.$D_NC   1    
 X1.$D_NC   1     X1.$D_NC   1     X1.$D_NC   1     X1.$D_NC   1    
-X1.$D_NC   1     X1.$D_NC   1     X1.$D_NC   1                X    
+X1.$D_NC   1     X1.$D_NC   1     X1.$D_NC   1     X4.Y0_O    1    
+X4.Y1_O    0     X4.Y2_O    0     X4.Y3_O    0     X4.Y4_O    0    
+X4.Y5_O    0     X4.Y6_O    0     X4.Y7_O    0                X    
 
