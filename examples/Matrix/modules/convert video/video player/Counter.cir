@@ -7,8 +7,13 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=2
-TXCnt=10
+NLCnt=3
+TXCnt=11
+
+[shapedef]
+Name=LedAnim
+Led=-8,-8,8,8
+Line=0,8,0,24
 
 [shapedef]
 Name=STIM8
@@ -68,7 +73,7 @@ Name=DClock
 Definition=Macro
 Shape=StimClock
 Mask=4096
-Used=11
+Used=19
 memo=Digital Clock Stimulus Macro
 Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
 Label Offset=29,10,12,21
@@ -80,7 +85,7 @@ Name=Stim8
 Definition=STIM
 Shape=STIM8
 Mask=5123
-Used=2
+Used=11
 Data2=8
 memo=8-Bit Digital Stimulus
 Label Offset=2,49,29,19
@@ -94,8 +99,19 @@ Pin="Out2",9,3,7,9
 Pin="Out1",9,4,7,10
 Pin="Out0",9,5,7,11
 
+[compdef]
+Name=Animated Digital LED
+Definition=DIGITAL LED
+Shape=LedAnim
+Mask=4096
+Used=659
+memo=Animated Digital LED
+Label Offset=11,-14,11,-13
+PinCnt=1
+Pin="In",0,3,5,0
+
 [Circuit]
-Window Placement=2,3, -1,-1, -8,-31, 0,52,658,538
+Window Placement=2,3, -1,-1, -8,-31, 77,32,971,518
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -107,7 +123,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 0,52,658,538
+Window Placement in Transient Analysis=0,1, -1,-1, -8,-31, 0,0,660,716
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -159,11 +175,11 @@ Style=8192
 
 [Attr]
 ON=2,-77,FORMAT
-V=11111111
+V=44
 
 [Attr]
 ON=2,-91,COMMAND
-V=Repeat15
+V=Count8
 
 [Attr]
 ON=2,-105,I/O MODEL
@@ -188,6 +204,43 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
+
+[Comp]
+Name=Animated Digital LED
+Px=912,304
+
+[Attr]
+ON=11,-14,PART
+V=U2
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Grid Text]
+Text="Q1"
+Px=912,328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
 
 [Grid Text]
 Text="CLK"
@@ -277,7 +330,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1
+Scale=0.66666666666666663
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -465,9 +518,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=246,96
-Scale 3=1
-Px=942,311
+SB 3=734,0
+Scale 3=0.66666666666666663
+Px=805,135
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -516,7 +569,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Text
-SB 0=0,16
+SB 0=0,65
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -575,6 +628,56 @@ Text=+Repeat 15 Times
 Text=++1us Incr by 1
 Text=+Endrepeat
 Text=++1us 0
+Text=
+Text=.define Count8
+Text=+0ns 00
+Text=
+Text=++800n 00
+Text=++800n C0
+Text=++800n F8
+Text=++800n 5F
+Text=++800n 7F
+Text=++800n 30
+Text=++800n 00
+Text=++800n 00
+Text=
+Text=++800n 00
+Text=++800n 60
+Text=++800n 78
+Text=++800n 47
+Text=++800n 47
+Text=++800n 5C
+Text=++800n F0
+Text=++800n 40
+Text=
+Text=++800n 40
+Text=++800n 70
+Text=++800n 4C
+Text=++800n 46
+Text=++800n 46
+Text=++800n 5C
+Text=++800n 70
+Text=++800n 00
+Text=
+Text=++800n 00
+Text=++800n 00
+Text=++800n 00
+Text=++800n 7F
+Text=++800n FF
+Text=++800n 00
+Text=++800n 00
+Text=++800n 00
+Text=
+Text=++800n 40
+Text=++800n 70
+Text=++800n 4C
+Text=++800n 47
+Text=++800n 46
+Text=++800n 5C
+Text=++800n 70
+Text=++800n 40
+Text=
+Text=
 
 [Text Area]
 Section=0
@@ -613,7 +716,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=2,3, -1,-1, -8,-31, 0,52,658,538
+Window Placement=0,1, -1,-1, -8,-31, 660,0,1320,716
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -678,15 +781,15 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=11
+MonMaxShow=10
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
 MonExprYWidth=367
 MonRangeXWidth=90
 MonRangeYWidth=90
-AnimateWait=None
-AnimateWaitTime=500
+AnimateWait=Time
+AnimateWaitTime=0
 AnimatePressAfter=0
 Save_For_Future=No
 Reduce_Display=1
@@ -866,10 +969,10 @@ Plt=1
 AliasID=1
 XExp=T
 YExp=d(Q1)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -891,10 +994,10 @@ Plt=1
 AliasID=2
 XExp=T
 YExp=d(Q2)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -916,10 +1019,10 @@ Plt=1
 AliasID=3
 XExp=T
 YExp=d(Q3)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
@@ -941,10 +1044,10 @@ Plt=1
 AliasID=4
 XExp=T
 YExp=d(Q4)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#FF00FF
 Text Color=#FF00FF
@@ -966,10 +1069,10 @@ Plt=1
 AliasID=5
 XExp=T
 YExp=d(Q5)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#000000
 Text Color=#000000
@@ -991,10 +1094,10 @@ Plt=1
 AliasID=7
 XExp=T
 YExp=d(Q6)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1016,10 +1119,10 @@ Plt=1
 AliasID=6
 XExp=T
 YExp=d(Q7)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1041,10 +1144,10 @@ Plt=1
 AliasID=8
 XExp=T
 YExp=d(Q8)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
@@ -1063,38 +1166,13 @@ NOFmtY=3E
 [WaveForm]
 Analysis=Transient
 Plt=1
-AliasID=9
-XExp=T
-YExp=d(QR)
-XRng=8e-5
-YRng=Auto
-Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
-Enable=Enable
-Line Color=#FF00FF
-Text Color=#FF00FF
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
-
-[WaveForm]
-Analysis=Transient
-Plt=1
 AliasID=10
 XExp=T
 YExp=d(CLK)
-XRng=8e-5
+XRng=4e-5
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=1.6e-5
+Range Grid X=8e-6
 Enable=Enable
 Line Color=#000000
 Text Color=#000000

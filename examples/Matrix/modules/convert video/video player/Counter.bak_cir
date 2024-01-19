@@ -263,7 +263,7 @@ CBorder=None
 
 [Grid Text]
 Text="QR1"
-Px=936,320
+Px=672,184
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -467,7 +467,7 @@ Scale 1=1
 Scale 2=1
 SB 3=246,96
 Scale 3=1
-Px=924,399
+Px=942,311
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
