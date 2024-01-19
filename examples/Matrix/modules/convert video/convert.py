@@ -83,16 +83,20 @@ def arr_to_str_frame(arr):
 if __name__ == '__main__':
     video_path = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/0001-0159.avi"
     file_path  = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/frames.txt"
+    save_path  = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/photo"
     resulting_frames = process_video(video_path)
 
     f = open(file_path, 'w')
     f.write(STR)
     f.close()
+    i = 0
     for frame in resulting_frames:
+        i += 1
         # print(frame)
         image = (frame*255).astype(np.uint8)
         enlarged_image = cv2.resize(image, (160, 160), interpolation=cv2.INTER_NEAREST)
         cv2.imshow('Processed Frame', enlarged_image)
+        cv2.imwrite(save_path+f'/frame_{i}.png', enlarged_image) 
         if cv2.waitKey(30) & 0xFF == ord('q'):
             break
 

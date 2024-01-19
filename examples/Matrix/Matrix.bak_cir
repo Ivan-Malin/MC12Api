@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=1237
+NLCnt=1242
 TXCnt=129
 
 [shapedef]
@@ -1389,7 +1389,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=136,896,144,896
+Pxs=136,896,184,896
 
 [Wire]
 Pxs=1416,1008,1416,1040
@@ -1673,11 +1673,11 @@ Pxs=352,984,448,984
 Pxs=944,888,944,1008
 
 [Wire]
-Pxs=400,888,944,888
+Pxs=400,888,408,888
 
 [Comp]
 Name=Inverter
-Px=352,888
+Px=360,888
 
 [Attr]
 ON=7,-34,PART
@@ -13370,9 +13370,6 @@ Pxs=1160,704,1200,704
 [Wire]
 Pxs=1200,704,1200,920
 
-[Wire]
-Pxs=144,896,184,896
-
 [Comp]
 Name=Animated Digital LED
 Px=2968,1272
@@ -15229,8 +15226,26 @@ V=$G_DGND
 ON=0,0,PACKAGE
 V
 
+[Wire]
+Pxs=312,864,312,952
+
+[Wire]
+Pxs=416,888,944,888
+
+[Wire]
+Pxs=408,888,416,888
+
+[Wire]
+Pxs=312,864,360,864
+
+[Wire]
+Pxs=360,864,360,888
+
+[Wire]
+Pxs=288,952,312,952
+
 [Grid Text]
-Text="LL1"
+Text="L1"
 Px=2968,1296
 GridSnap=True
 JustifyH=Left
@@ -15247,7 +15262,7 @@ CBorder=None
 
 [Grid Text]
 Text="CLK"
-Px=144,896
+Px=416,888
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -15758,7 +15773,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL2"
+Text="L2"
 Px=2968,1328
 GridSnap=True
 JustifyH=Left
@@ -15766,7 +15781,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL3"
+Text="L3"
 Px=2968,1360
 GridSnap=True
 JustifyH=Left
@@ -15774,7 +15789,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL4"
+Text="L4"
 Px=2968,1392
 GridSnap=True
 JustifyH=Left
@@ -15782,7 +15797,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL5"
+Text="L5"
 Px=2968,1424
 GridSnap=True
 JustifyH=Left
@@ -15790,7 +15805,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL6"
+Text="L6"
 Px=2968,1456
 GridSnap=True
 JustifyH=Left
@@ -15798,7 +15813,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL7"
+Text="L7"
 Px=2968,1488
 GridSnap=True
 JustifyH=Left
@@ -15806,7 +15821,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL8"
+Text="L8"
 Px=2968,1520
 GridSnap=True
 JustifyH=Left
@@ -15814,7 +15829,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL9"
+Text="L9"
 Px=3000,1296
 GridSnap=True
 JustifyH=Left
@@ -15822,7 +15837,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL10"
+Text="L10"
 Px=3000,1328
 GridSnap=True
 JustifyH=Left
@@ -15830,7 +15845,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL11"
+Text="L11"
 Px=3000,1360
 GridSnap=True
 JustifyH=Left
@@ -15838,7 +15853,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL12"
+Text="L12"
 Px=3000,1392
 GridSnap=True
 JustifyH=Left
@@ -15846,7 +15861,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL13"
+Text="L13"
 Px=3000,1424
 GridSnap=True
 JustifyH=Left
@@ -15854,7 +15869,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL14"
+Text="L14"
 Px=3000,1456
 GridSnap=True
 JustifyH=Left
@@ -15862,7 +15877,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL15"
+Text="L15"
 Px=3000,1488
 GridSnap=True
 JustifyH=Left
@@ -15870,7 +15885,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL16"
+Text="L16"
 Px=3000,1520
 GridSnap=True
 JustifyH=Left
@@ -15878,7 +15893,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL17"
+Text="L17"
 Px=3032,1296
 GridSnap=True
 JustifyH=Left
@@ -15886,7 +15901,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL18"
+Text="L18"
 Px=3032,1328
 GridSnap=True
 JustifyH=Left
@@ -15894,7 +15909,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL19"
+Text="L19"
 Px=3032,1360
 GridSnap=True
 JustifyH=Left
@@ -15902,7 +15917,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL20"
+Text="L20"
 Px=3032,1392
 GridSnap=True
 JustifyH=Left
@@ -15910,7 +15925,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL21"
+Text="L21"
 Px=3032,1424
 GridSnap=True
 JustifyH=Left
@@ -15918,7 +15933,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL22"
+Text="L22"
 Px=3032,1456
 GridSnap=True
 JustifyH=Left
@@ -15926,7 +15941,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL23"
+Text="L23"
 Px=3032,1488
 GridSnap=True
 JustifyH=Left
@@ -15934,7 +15949,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL24"
+Text="L24"
 Px=3032,1520
 GridSnap=True
 JustifyH=Left
@@ -15942,7 +15957,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL25"
+Text="L25"
 Px=3064,1296
 GridSnap=True
 JustifyH=Left
@@ -15950,7 +15965,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL26"
+Text="L26"
 Px=3064,1328
 GridSnap=True
 JustifyH=Left
@@ -15958,7 +15973,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL27"
+Text="L27"
 Px=3064,1360
 GridSnap=True
 JustifyH=Left
@@ -15966,7 +15981,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL28"
+Text="L28"
 Px=3064,1392
 GridSnap=True
 JustifyH=Left
@@ -15974,7 +15989,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL29"
+Text="L29"
 Px=3064,1424
 GridSnap=True
 JustifyH=Left
@@ -15982,7 +15997,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL30"
+Text="L30"
 Px=3064,1456
 GridSnap=True
 JustifyH=Left
@@ -15990,7 +16005,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL31"
+Text="L31"
 Px=3064,1488
 GridSnap=True
 JustifyH=Left
@@ -15998,7 +16013,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL32"
+Text="L32"
 Px=3064,1520
 GridSnap=True
 JustifyH=Left
@@ -16006,7 +16021,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL33"
+Text="L33"
 Px=3096,1296
 GridSnap=True
 JustifyH=Left
@@ -16014,7 +16029,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL34"
+Text="L34"
 Px=3096,1328
 GridSnap=True
 JustifyH=Left
@@ -16022,7 +16037,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL35"
+Text="L35"
 Px=3096,1360
 GridSnap=True
 JustifyH=Left
@@ -16030,7 +16045,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL36"
+Text="L36"
 Px=3096,1392
 GridSnap=True
 JustifyH=Left
@@ -16038,7 +16053,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL37"
+Text="L37"
 Px=3096,1424
 GridSnap=True
 JustifyH=Left
@@ -16046,7 +16061,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL38"
+Text="L38"
 Px=3096,1456
 GridSnap=True
 JustifyH=Left
@@ -16054,7 +16069,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL39"
+Text="L39"
 Px=3096,1488
 GridSnap=True
 JustifyH=Left
@@ -16062,7 +16077,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL40"
+Text="L40"
 Px=3096,1520
 GridSnap=True
 JustifyH=Left
@@ -16070,7 +16085,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL41"
+Text="L41"
 Px=3128,1296
 GridSnap=True
 JustifyH=Left
@@ -16078,7 +16093,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL42"
+Text="L42"
 Px=3128,1328
 GridSnap=True
 JustifyH=Left
@@ -16086,7 +16101,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL43"
+Text="L43"
 Px=3128,1360
 GridSnap=True
 JustifyH=Left
@@ -16094,7 +16109,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL44"
+Text="L44"
 Px=3128,1392
 GridSnap=True
 JustifyH=Left
@@ -16102,7 +16117,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL45"
+Text="L45"
 Px=3128,1424
 GridSnap=True
 JustifyH=Left
@@ -16110,7 +16125,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL46"
+Text="L46"
 Px=3128,1456
 GridSnap=True
 JustifyH=Left
@@ -16118,7 +16133,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL47"
+Text="L47"
 Px=3128,1488
 GridSnap=True
 JustifyH=Left
@@ -16126,7 +16141,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL48"
+Text="L48"
 Px=3128,1520
 GridSnap=True
 JustifyH=Left
@@ -16134,7 +16149,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL49"
+Text="L49"
 Px=3160,1296
 GridSnap=True
 JustifyH=Left
@@ -16142,7 +16157,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL50"
+Text="L50"
 Px=3160,1328
 GridSnap=True
 JustifyH=Left
@@ -16150,7 +16165,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL51"
+Text="L51"
 Px=3160,1360
 GridSnap=True
 JustifyH=Left
@@ -16158,7 +16173,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL52"
+Text="L52"
 Px=3160,1392
 GridSnap=True
 JustifyH=Left
@@ -16166,7 +16181,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL53"
+Text="L53"
 Px=3160,1424
 GridSnap=True
 JustifyH=Left
@@ -16174,7 +16189,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL54"
+Text="L54"
 Px=3160,1456
 GridSnap=True
 JustifyH=Left
@@ -16182,7 +16197,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL55"
+Text="L55"
 Px=3160,1488
 GridSnap=True
 JustifyH=Left
@@ -16190,7 +16205,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL56"
+Text="L56"
 Px=3160,1520
 GridSnap=True
 JustifyH=Left
@@ -16198,7 +16213,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL57"
+Text="L57"
 Px=3192,1296
 GridSnap=True
 JustifyH=Left
@@ -16206,7 +16221,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL58"
+Text="L58"
 Px=3192,1328
 GridSnap=True
 JustifyH=Left
@@ -16214,7 +16229,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL59"
+Text="L59"
 Px=3192,1360
 GridSnap=True
 JustifyH=Left
@@ -16222,7 +16237,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL60"
+Text="L60"
 Px=3192,1392
 GridSnap=True
 JustifyH=Left
@@ -16230,7 +16245,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL61"
+Text="L61"
 Px=3192,1424
 GridSnap=True
 JustifyH=Left
@@ -16238,7 +16253,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL62"
+Text="L62"
 Px=3192,1456
 GridSnap=True
 JustifyH=Left
@@ -16246,7 +16261,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL63"
+Text="L63"
 Px=3192,1488
 GridSnap=True
 JustifyH=Left
@@ -16254,7 +16269,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="LL64"
+Text="L64"
 Px=3192,1520
 GridSnap=True
 JustifyH=Left
@@ -16269,7 +16284,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=0.66666666666666663
+Scale=2.6666666666666665
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -16457,9 +16472,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=2702,1208
-Scale 3=0.66666666666666663
-Px=3261,1428
+SB 3=890,763
+Scale 3=2.6666666666666665
+Px=3664,1864
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -16508,6 +16523,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Text
+SB 0=9,52
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -16558,7 +16574,7 @@ Text=
 Text=.define Count8
 Text=+0ns 00
 Text=
-Text=++800n 00
+Text=++0n 00
 Text=++800n C0
 Text=++800n F8
 Text=++800n 5F
