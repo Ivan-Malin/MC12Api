@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=1096
-TXCnt=1
+NLCnt=1237
+TXCnt=129
 
 [shapedef]
 Name=238
@@ -69,6 +69,12 @@ Line=40,8,48,8
 Arc=12,-4,40,20 , 28,32,28,-16
 
 [shapedef]
+Name=Bigor.root
+Root="Or.root",0,16,0
+Arc=1,-12,11,12 , 6,12,6,-12
+Arc=1,36,11,60 , 6,60,6,36
+
+[shapedef]
 Name=Fixed
 Line=8,0,32,0
 Line=8,0,0,-8
@@ -113,6 +119,17 @@ Led=-8,-8,8,8
 Line=0,8,0,24
 
 [shapedef]
+Name=Or9
+Root="Bigor.root",0,8,0
+Line=0,0,10,0
+Line=0,8,11,8
+Line=0,16,10,16
+Line=0,32,12,32
+Line=0,48,10,48
+Line=0,56,11,56
+Line=0,64,10,64
+
+[shapedef]
 Name=Or.root
 Line=42,8,48,8
 Line=0,0,10,0
@@ -145,6 +162,30 @@ Line=36,-5,36,4
 Line=36,4,41,4
 Line=41,4,41,-5
 Line=41,-5,43,-5
+
+[shapedef]
+Name=STIM8
+Rectangle=0,-24,64,48
+FColor=None
+Line=8,16,16,16
+Line=16,16,16,8
+Line=16,8,24,8
+Line=24,8,24,16
+Line=24,16,32,16
+Line=32,16,32,8
+Line=32,8,48,8
+Line=48,8,48,16
+Line=48,16,56,16
+Line=64,-16,72,-16
+Line=64,-8,72,-8
+Line=64,0,72,0
+Line=64,8,72,8
+Line=64,16,72,16
+Line=64,24,72,24
+Line=64,32,72,32
+Line=64,40,72,40
+Rectangle=54,-18,58,-14
+FColor=None
 
 [shapedef]
 Name=StimClock
@@ -189,7 +230,7 @@ Name=And2
 Definition=AND
 Shape=And2
 Mask=4867
-Used=374
+Used=23
 Data1=2
 memo=2 Input Generic AND Gate
 Label Offset=12,21,8,8
@@ -203,7 +244,6 @@ Name=74ACT590
 Definition=Subckt
 Shape=590
 Mask=20608
-Used=5
 memo=8-Bit Binary Counter with Registered 3-State Outputs
 Label Offset=33,160,-1,26
 PinCnt=14
@@ -227,7 +267,7 @@ Name=DClock
 Definition=Macro
 Shape=StimClock
 Mask=4096
-Used=16
+Used=11
 memo=Digital Clock Stimulus Macro
 Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
 Label Offset=29,10,12,21
@@ -239,7 +279,7 @@ Name=Fixed Digital
 Definition=DIGITAL STATE
 Shape=Fixed
 Mask=3840
-Used=377
+Used=23
 memo=Provides a fixed digital state
 Label Offset=-14,-7,-6,-27
 PinCnt=1
@@ -250,7 +290,7 @@ Name=Stim1
 Definition=STIM
 Shape=STIM1
 Mask=5123
-Used=19
+Used=12
 Data2=1
 memo=1-Bit Digital Stimulus
 Label Offset=-10,-6,13,20
@@ -262,7 +302,6 @@ Name=Xor
 Definition=XOR
 Shape=Xor2
 Mask=4096
-Used=4
 Data1=2
 memo=Generic XOR Gate
 Label Offset=14,4,8,11
@@ -276,7 +315,6 @@ Name=74AC238
 Definition=Subckt
 Shape=238
 Mask=20608
-Used=5
 memo=3-to-8 Line Decoder/Demultiplexer
 Label Offset=15,138,-5,16
 PinCnt=14
@@ -300,7 +338,7 @@ Name=Inverter
 Definition=INV
 Shape=Inv
 Mask=4611
-Used=168
+Used=40
 Data1=1
 memo=Generic Inverter Gate
 Label Offset=12,-6,11,21
@@ -313,7 +351,6 @@ Name=SRFF
 Definition=SRFF
 Shape=LatchSR
 Mask=21507
-Used=323
 Data1=1
 memo=Generic SR Latch
 Label Offset=38,9,-31,41
@@ -331,14 +368,52 @@ Name=Animated Digital LED
 Definition=DIGITAL LED
 Shape=LedAnim
 Mask=4096
-Used=335
+Used=83
 memo=Animated Digital LED
 Label Offset=11,-14,11,-13
 PinCnt=1
 Pin="In",0,3,5,0
 
+[compdef]
+Name=Stim8
+Definition=STIM
+Shape=STIM8
+Mask=5123
+Data2=8
+memo=8-Bit Digital Stimulus
+Label Offset=2,49,29,19
+PinCnt=8
+Pin="Out7",9,-2,7,4
+Pin="Out6",9,-1,7,5
+Pin="Out5",9,0,7,6
+Pin="Out4",9,1,7,7
+Pin="Out3",9,2,7,8
+Pin="Out2",9,3,7,9
+Pin="Out1",9,4,7,10
+Pin="Out0",9,5,7,11
+
+[compdef]
+Name=Or9
+Definition=OR
+Shape=Or9
+Mask=4096
+Data1=9
+memo=9 Input Generic OR Gate
+Label Offset=14,30,-18,13
+PinCnt=10
+Pin="In0",0,0,-8,-1
+Pin="In1",0,1,-18,4
+Pin="In2",0,2,-18,5
+Pin="In3",0,3,-18,6
+Pin="In4",0,4,-18,7
+Pin="In5",0,5,-18,8
+Pin="In6",0,6,-18,10
+Pin="In7",0,7,-18,12
+Pin="In8",0,8,-10,16
+Pin="Out",6,4,-8,-2
+
 [Circuit]
-Window Placement=2,3, -1,-1, -8,-31, 130,130,1024,616
+Window Placement=2,3, -1,-1, -8,-31, 77,32,971,518
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -1314,7 +1389,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=136,896,184,896
+Pxs=136,896,144,896
 
 [Wire]
 Pxs=1416,1008,1416,1040
@@ -1329,40 +1404,40 @@ Pxs=880,1024,1216,1024
 Pxs=1208,1040,1208,1208
 
 [Wire]
-Pxs=880,1040,1208,1040
+Pxs=880,1040,888,1040
 
 [Wire]
 Pxs=1200,1056,1200,1336
 
 [Wire]
-Pxs=880,1056,1200,1056
+Pxs=880,1056,896,1056
 
 [Wire]
 Pxs=1192,1072,1192,1464
 
 [Wire]
-Pxs=880,1072,1192,1072
+Pxs=880,1072,904,1072
 
 [Wire]
 Pxs=1184,1088,1184,1592
 
 [Wire]
-Pxs=880,1088,1184,1088
+Pxs=880,1088,912,1088
 
 [Wire]
 Pxs=1176,1104,1176,1720
 
 [Wire]
-Pxs=880,1104,1176,1104
+Pxs=880,1104,920,1104
 
 [Wire]
 Pxs=1168,1120,1168,1848
 
 [Wire]
-Pxs=880,1120,1168,1120
+Pxs=880,1120,928,1120
 
 [Wire]
-Pxs=880,1136,1160,1136
+Pxs=880,1136,936,1136
 
 [Wire]
 Pxs=1160,1136,1160,1976
@@ -1432,40 +1507,6 @@ Pxs=640,1136,640,2248
 
 [Wire]
 Pxs=640,2248,2544,2248
-
-[Comp]
-Name=Fixed Digital
-Px=1200,888
-Rot=7
-
-[Attr]
-ON=-27,-27,PART
-V=U506
-
-[Attr]
-ON=-2,-13,VALUE
-V=1
-Style=8192
-
-[Attr]
-ON=-41,1,I/O MODEL
-V=IO_STD
-
-[Attr]
-ON=-2,15,IO_LEVEL
-V=0
-
-[Attr]
-ON=-58,29,POWER NODE
-V=$G_DPWR
-
-[Attr]
-ON=-55,43,GROUND NODE
-V=$G_DGND
-
-[Attr]
-ON=0,0,PACKAGE
-V
 
 [Wire]
 Pxs=944,1008,1416,1008
@@ -1632,7 +1673,7 @@ Pxs=352,984,448,984
 Pxs=944,888,944,1008
 
 [Wire]
-Pxs=424,888,944,888
+Pxs=400,888,944,888
 
 [Comp]
 Name=Inverter
@@ -1670,9 +1711,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=400,888,424,888
 
 [Wire]
 Pxs=1256,976,1256,1096
@@ -4602,9 +4640,6 @@ Pxs=1712,1144,1720,1144
 Pxs=1712,1144,1712,1272
 
 [Wire]
-Pxs=1704,1088,1704,1104
-
-[Wire]
 Pxs=1704,1088,1872,1088
 
 [Wire]
@@ -5952,7 +5987,7 @@ Pxs=1880,1144,1888,1144
 Pxs=1880,1144,1880,1272
 
 [Wire]
-Pxs=1872,1088,1872,1104
+Pxs=1872,1088,1872,1128
 
 [Wire]
 Pxs=1872,1088,2040,1088
@@ -7143,10 +7178,7 @@ Pxs=1872,1984,2040,1984
 Pxs=1920,2080,1920,2136
 
 [Wire]
-Pxs=1704,1112,1704,1128
-
-[Wire]
-Pxs=1872,1112,1872,1128
+Pxs=1704,1088,1704,1128
 
 [Wire]
 Pxs=688,2200,1536,2200
@@ -10020,7 +10052,7 @@ Pxs=2384,1144,2392,1144
 Pxs=2384,1144,2384,1272
 
 [Wire]
-Pxs=2376,1088,2376,1104
+Pxs=2376,1088,2376,1128
 
 [Wire]
 Pxs=2376,1088,2544,1088
@@ -11370,9 +11402,6 @@ Pxs=2552,1144,2560,1144
 Pxs=2552,1144,2552,1272
 
 [Wire]
-Pxs=2544,1088,2544,1104
-
-[Wire]
 Pxs=2544,1088,2712,1088
 
 [Wire]
@@ -12561,10 +12590,7 @@ Pxs=2544,1984,2712,1984
 Pxs=2592,2080,2592,2136
 
 [Wire]
-Pxs=2376,1112,2376,1128
-
-[Wire]
-Pxs=2544,1112,2544,1128
+Pxs=2544,1088,2544,1128
 
 [Wire]
 Pxs=2088,1040,2256,1040
@@ -12581,7 +12607,7 @@ Px=1216,920
 Rot=1
 
 [Attr]
-ON=-41,-22,PART
+ON=-22,17,PART
 V=U766
 Style=8192
 
@@ -12722,9 +12748,3514 @@ V
 [Wire]
 Pxs=288,1000,352,1000
 
+[Comp]
+Name=Stim8
+Px=704,656
+Rot=4
+
+[Attr]
+ON=2,-63,PART
+V=U1
+Style=8192
+
+[Attr]
+ON=2,-77,FORMAT
+V=44
+
+[Attr]
+ON=2,-91,COMMAND
+V=Count8
+
+[Attr]
+ON=2,-105,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=2,-119,TIMESTEP
+V=0
+
+[Attr]
+ON=2,-133,IO_LEVEL
+V=0
+
+[Attr]
+ON=2,-147,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=2,-161,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,616
+
+[Attr]
+ON=8,2,PART
+V=U769
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,640
+
+[Attr]
+ON=8,2,PART
+V=U770
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,664
+
+[Attr]
+ON=8,2,PART
+V=U771
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,688
+
+[Attr]
+ON=8,2,PART
+V=U772
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,712
+
+[Attr]
+ON=8,2,PART
+V=U773
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,736
+
+[Attr]
+ON=8,2,PART
+V=U774
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,760
+
+[Attr]
+ON=8,2,PART
+V=U775
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=And2
+Px=968,784
+
+[Attr]
+ON=8,2,PART
+V=U776
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=880,632,968,632
+
+[Wire]
+Pxs=880,632,880,1024
+
+[Wire]
+Pxs=888,656,968,656
+
+[Wire]
+Pxs=888,656,888,1040
+
+[Wire]
+Pxs=888,1040,1208,1040
+
+[Wire]
+Pxs=896,680,968,680
+
+[Wire]
+Pxs=896,680,896,1056
+
+[Wire]
+Pxs=896,1056,1200,1056
+
+[Wire]
+Pxs=904,704,968,704
+
+[Wire]
+Pxs=904,704,904,1072
+
+[Wire]
+Pxs=904,1072,1192,1072
+
+[Wire]
+Pxs=912,728,968,728
+
+[Wire]
+Pxs=912,728,912,1088
+
+[Wire]
+Pxs=912,1088,1184,1088
+
+[Wire]
+Pxs=920,752,968,752
+
+[Wire]
+Pxs=920,752,920,1104
+
+[Wire]
+Pxs=920,1104,1176,1104
+
+[Wire]
+Pxs=928,776,968,776
+
+[Wire]
+Pxs=928,776,928,1120
+
+[Wire]
+Pxs=928,1120,1168,1120
+
+[Wire]
+Pxs=936,800,968,800
+
+[Wire]
+Pxs=936,800,936,1136
+
+[Wire]
+Pxs=936,1136,1160,1136
+
+[Wire]
+Pxs=776,616,968,616
+
+[Wire]
+Pxs=856,640,968,640
+
+[Wire]
+Pxs=856,624,856,640
+
+[Wire]
+Pxs=776,624,856,624
+
+[Wire]
+Pxs=848,664,968,664
+
+[Wire]
+Pxs=848,632,848,664
+
+[Wire]
+Pxs=776,632,848,632
+
+[Wire]
+Pxs=840,688,968,688
+
+[Wire]
+Pxs=840,640,840,688
+
+[Wire]
+Pxs=776,640,840,640
+
+[Wire]
+Pxs=832,712,968,712
+
+[Wire]
+Pxs=832,648,832,712
+
+[Wire]
+Pxs=776,648,832,648
+
+[Wire]
+Pxs=824,736,968,736
+
+[Wire]
+Pxs=824,656,824,736
+
+[Wire]
+Pxs=776,656,824,656
+
+[Wire]
+Pxs=816,760,968,760
+
+[Wire]
+Pxs=816,664,816,760
+
+[Wire]
+Pxs=776,664,816,664
+
+[Wire]
+Pxs=808,784,968,784
+
+[Wire]
+Pxs=808,672,808,784
+
+[Wire]
+Pxs=776,672,808,672
+
+[Comp]
+Name=Or9
+Px=1112,672
+
+[Attr]
+ON=14,30,PART
+V=U777
+Style=8192
+
+[Attr]
+ON=14,44,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=14,58,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=14,72,MNTYMXDLY
+V=0
+
+[Attr]
+ON=14,86,IO_LEVEL
+V=0
+
+[Attr]
+ON=14,100,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=14,114,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Fixed Digital
+Px=1112,640
+Rot=7
+
+[Attr]
+ON=-27,-27,PART
+V=U778
+
+[Attr]
+ON=-2,-13,VALUE
+V=0
+Style=8192
+
+[Attr]
+ON=-41,1,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-2,15,IO_LEVEL
+V=0
+
+[Attr]
+ON=-58,29,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-55,43,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1088,680,1112,680
+
+[Wire]
+Pxs=1088,624,1088,680
+
+[Wire]
+Pxs=1016,624,1088,624
+
+[Wire]
+Pxs=1016,648,1080,648
+
+[Wire]
+Pxs=1080,648,1080,688
+
+[Wire]
+Pxs=1080,688,1112,688
+
+[Wire]
+Pxs=1016,672,1072,672
+
+[Wire]
+Pxs=1072,672,1072,696
+
+[Wire]
+Pxs=1072,696,1112,696
+
+[Wire]
+Pxs=1064,704,1112,704
+
+[Wire]
+Pxs=1016,696,1064,696
+
+[Wire]
+Pxs=1064,696,1064,704
+
+[Wire]
+Pxs=1064,712,1112,712
+
+[Wire]
+Pxs=1064,712,1064,720
+
+[Wire]
+Pxs=1016,720,1064,720
+
+[Wire]
+Pxs=1072,720,1112,720
+
+[Wire]
+Pxs=1072,720,1072,744
+
+[Wire]
+Pxs=1016,744,1072,744
+
+[Wire]
+Pxs=1080,728,1112,728
+
+[Wire]
+Pxs=1080,728,1080,768
+
+[Wire]
+Pxs=1016,768,1080,768
+
+[Wire]
+Pxs=1088,736,1112,736
+
+[Wire]
+Pxs=1088,736,1088,792
+
+[Wire]
+Pxs=1016,792,1088,792
+
+[Wire]
+Pxs=1160,704,1200,704
+
+[Wire]
+Pxs=1200,704,1200,920
+
+[Wire]
+Pxs=144,896,184,896
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1272
+
+[Attr]
+ON=-13,2,PART
+V=U779
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1304
+
+[Attr]
+ON=-13,2,PART
+V=U780
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1336
+
+[Attr]
+ON=-13,2,PART
+V=U781
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1368
+
+[Attr]
+ON=-13,2,PART
+V=U782
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1400
+
+[Attr]
+ON=-13,2,PART
+V=U783
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1432
+
+[Attr]
+ON=-13,2,PART
+V=U784
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1464
+
+[Attr]
+ON=-13,2,PART
+V=U785
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=2968,1496
+
+[Attr]
+ON=-13,2,PART
+V=U786
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1272
+
+[Attr]
+ON=-13,2,PART
+V=U787
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1304
+
+[Attr]
+ON=-13,2,PART
+V=U788
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1336
+
+[Attr]
+ON=-13,2,PART
+V=U789
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1368
+
+[Attr]
+ON=-13,2,PART
+V=U790
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1400
+
+[Attr]
+ON=-13,2,PART
+V=U791
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1432
+
+[Attr]
+ON=-13,2,PART
+V=U792
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1464
+
+[Attr]
+ON=-13,2,PART
+V=U793
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3000,1496
+
+[Attr]
+ON=-13,2,PART
+V=U794
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1272
+
+[Attr]
+ON=-13,2,PART
+V=U795
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1304
+
+[Attr]
+ON=-13,2,PART
+V=U796
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1336
+
+[Attr]
+ON=-13,2,PART
+V=U797
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1368
+
+[Attr]
+ON=-13,2,PART
+V=U798
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1400
+
+[Attr]
+ON=-13,2,PART
+V=U799
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1432
+
+[Attr]
+ON=-13,2,PART
+V=U800
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1464
+
+[Attr]
+ON=-13,2,PART
+V=U801
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3032,1496
+
+[Attr]
+ON=-13,2,PART
+V=U802
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1272
+
+[Attr]
+ON=-13,2,PART
+V=U803
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1304
+
+[Attr]
+ON=-13,2,PART
+V=U804
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1336
+
+[Attr]
+ON=-13,2,PART
+V=U805
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1368
+
+[Attr]
+ON=-13,2,PART
+V=U806
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1400
+
+[Attr]
+ON=-13,2,PART
+V=U807
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1432
+
+[Attr]
+ON=-13,2,PART
+V=U808
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1464
+
+[Attr]
+ON=-13,2,PART
+V=U809
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3064,1496
+
+[Attr]
+ON=-13,2,PART
+V=U810
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1272
+
+[Attr]
+ON=-13,2,PART
+V=U811
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1304
+
+[Attr]
+ON=-13,2,PART
+V=U812
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1336
+
+[Attr]
+ON=-13,2,PART
+V=U813
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1368
+
+[Attr]
+ON=-13,2,PART
+V=U814
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1400
+
+[Attr]
+ON=-13,2,PART
+V=U815
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1432
+
+[Attr]
+ON=-13,2,PART
+V=U816
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1464
+
+[Attr]
+ON=-13,2,PART
+V=U817
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3096,1496
+
+[Attr]
+ON=-13,2,PART
+V=U818
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1272
+
+[Attr]
+ON=-13,2,PART
+V=U819
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1304
+
+[Attr]
+ON=-13,2,PART
+V=U820
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1336
+
+[Attr]
+ON=-13,2,PART
+V=U821
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1368
+
+[Attr]
+ON=-13,2,PART
+V=U822
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1400
+
+[Attr]
+ON=-13,2,PART
+V=U823
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1432
+
+[Attr]
+ON=-13,2,PART
+V=U824
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1464
+
+[Attr]
+ON=-13,2,PART
+V=U825
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3128,1496
+
+[Attr]
+ON=-13,2,PART
+V=U826
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1272
+
+[Attr]
+ON=-13,2,PART
+V=U827
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1304
+
+[Attr]
+ON=-13,2,PART
+V=U828
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1336
+
+[Attr]
+ON=-13,2,PART
+V=U829
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1368
+
+[Attr]
+ON=-13,2,PART
+V=U830
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1400
+
+[Attr]
+ON=-13,2,PART
+V=U831
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1432
+
+[Attr]
+ON=-13,2,PART
+V=U832
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1464
+
+[Attr]
+ON=-13,2,PART
+V=U833
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3160,1496
+
+[Attr]
+ON=-13,2,PART
+V=U834
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1272
+
+[Attr]
+ON=-13,2,PART
+V=U835
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1304
+
+[Attr]
+ON=-13,2,PART
+V=U836
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1336
+
+[Attr]
+ON=-13,2,PART
+V=U837
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1368
+
+[Attr]
+ON=-13,2,PART
+V=U838
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1400
+
+[Attr]
+ON=-13,2,PART
+V=U839
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1432
+
+[Attr]
+ON=-13,2,PART
+V=U840
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1464
+
+[Attr]
+ON=-13,2,PART
+V=U841
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Animated Digital LED
+Px=3192,1496
+
+[Attr]
+ON=-13,2,PART
+V=U842
+Style=8192
+
+[Attr]
+ON=11,0,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=11,14,IO_LEVEL
+V=0
+
+[Attr]
+ON=11,28,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=11,42,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Grid Text]
+Text="LL1"
+Px=2968,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L1"
+Px=1512,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
 [Grid Text]
 Text="CLK"
-Px=424,888
+Px=144,896
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L2"
+Px=1512,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L3"
+Px=1512,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L4"
+Px=1512,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L5"
+Px=1512,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L6"
+Px=1512,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L7"
+Px=1512,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L8"
+Px=1512,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L9"
+Px=1680,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L10"
+Px=1680,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L11"
+Px=1680,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L12"
+Px=1680,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L13"
+Px=1680,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L14"
+Px=1680,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L15"
+Px=1680,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L16"
+Px=1680,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L17"
+Px=1848,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L18"
+Px=1848,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L19"
+Px=1848,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L20"
+Px=1848,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L21"
+Px=1848,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L22"
+Px=1848,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L23"
+Px=1848,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L24"
+Px=1848,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L25"
+Px=2016,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L26"
+Px=2016,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L27"
+Px=2016,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L28"
+Px=2016,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L29"
+Px=2016,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L30"
+Px=2016,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L31"
+Px=2016,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L32"
+Px=2016,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L33"
+Px=2184,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L34"
+Px=2184,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L35"
+Px=2184,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L36"
+Px=2184,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L37"
+Px=2184,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L38"
+Px=2184,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L39"
+Px=2184,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L40"
+Px=2184,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L41"
+Px=2352,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L42"
+Px=2352,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L43"
+Px=2352,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L44"
+Px=2352,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L45"
+Px=2352,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L46"
+Px=2352,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L47"
+Px=2352,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L48"
+Px=2352,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L49"
+Px=2520,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L50"
+Px=2520,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L51"
+Px=2520,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L52"
+Px=2520,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L53"
+Px=2520,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L54"
+Px=2520,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L55"
+Px=2520,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L56"
+Px=2520,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L57"
+Px=2688,1136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L58"
+Px=2688,1264
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L59"
+Px=2688,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L60"
+Px=2688,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L61"
+Px=2688,1648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L62"
+Px=2688,1776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L63"
+Px=2688,1904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="L64"
+Px=2688,2032
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL2"
+Px=2968,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL3"
+Px=2968,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL4"
+Px=2968,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL5"
+Px=2968,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL6"
+Px=2968,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL7"
+Px=2968,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL8"
+Px=2968,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL9"
+Px=3000,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL10"
+Px=3000,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL11"
+Px=3000,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL12"
+Px=3000,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL13"
+Px=3000,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL14"
+Px=3000,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL15"
+Px=3000,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL16"
+Px=3000,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL17"
+Px=3032,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL18"
+Px=3032,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL19"
+Px=3032,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL20"
+Px=3032,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL21"
+Px=3032,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL22"
+Px=3032,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL23"
+Px=3032,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL24"
+Px=3032,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL25"
+Px=3064,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL26"
+Px=3064,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL27"
+Px=3064,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL28"
+Px=3064,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL29"
+Px=3064,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL30"
+Px=3064,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL31"
+Px=3064,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL32"
+Px=3064,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL33"
+Px=3096,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL34"
+Px=3096,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL35"
+Px=3096,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL36"
+Px=3096,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL37"
+Px=3096,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL38"
+Px=3096,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL39"
+Px=3096,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL40"
+Px=3096,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL41"
+Px=3128,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL42"
+Px=3128,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL43"
+Px=3128,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL44"
+Px=3128,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL45"
+Px=3128,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL46"
+Px=3128,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL47"
+Px=3128,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL48"
+Px=3128,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL49"
+Px=3160,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL50"
+Px=3160,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL51"
+Px=3160,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL52"
+Px=3160,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL53"
+Px=3160,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL54"
+Px=3160,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL55"
+Px=3160,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL56"
+Px=3160,1520
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL57"
+Px=3192,1296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL58"
+Px=3192,1328
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL59"
+Px=3192,1360
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL60"
+Px=3192,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL61"
+Px=3192,1424
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL62"
+Px=3192,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL63"
+Px=3192,1488
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="LL64"
+Px=3192,1520
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -12738,7 +16269,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=4
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -12926,9 +16457,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=0,520
-Scale 3=1.3333333333333333
-Px=429,1025
+SB 3=0,108
+Scale 3=4
+Px=3260,1428
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -13023,6 +16554,54 @@ Text=.define SET
 Text=+0ns 0
 Text=++1ns 1
 Text=++1ns 0
+Text=
+Text=.define Count8
+Text=+0ns 00
+Text=
+Text=++800n 00
+Text=++800n C0
+Text=++800n F8
+Text=++800n 5F
+Text=++800n 7F
+Text=++800n 30
+Text=++800n 00
+Text=++800n 00
+Text=
+Text=++800n 00
+Text=++800n 60
+Text=++800n 78
+Text=++800n 47
+Text=++800n 47
+Text=++800n 5C
+Text=++800n F0
+Text=++800n 40
+Text=
+Text=++800n 40
+Text=++800n 70
+Text=++800n 4C
+Text=++800n 46
+Text=++800n 46
+Text=++800n 5C
+Text=++800n 70
+Text=++800n 00
+Text=
+Text=++800n 00
+Text=++800n 00
+Text=++800n 00
+Text=++800n 7F
+Text=++800n FF
+Text=++800n 00
+Text=++800n 00
+Text=++800n 00
+Text=
+Text=++800n 40
+Text=++800n 70
+Text=++800n 4C
+Text=++800n 47
+Text=++800n 46
+Text=++800n 5C
+Text=++800n 70
+Text=++800n 40
 
 [Text Area]
 Section=0
@@ -13300,7 +16879,7 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=80u
+TMax=8000u
 TStart=0
 TStep=0
 NPts=51
@@ -13318,10 +16897,10 @@ Plt=1
 AliasID=3
 XExp=T
 YExp=d(CLK)
-XRng=1.5e-8
+XRng=1,-1
 YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=3e-9
+Range Grid X=0.5
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
