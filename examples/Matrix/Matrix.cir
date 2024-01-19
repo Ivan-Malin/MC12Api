@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=1167
+NLCnt=1247
 TXCnt=1
 
 [shapedef]
@@ -196,7 +196,7 @@ Name=Fixed Digital
 Definition=DIGITAL STATE
 Shape=Fixed
 Mask=3840
-Used=170
+Used=300
 memo=Provides a fixed digital state
 Label Offset=-14,-7,-6,-27
 PinCnt=1
@@ -207,7 +207,7 @@ Name=Animated Digital LED
 Definition=DIGITAL LED
 Shape=LedAnim
 Mask=4096
-Used=132
+Used=260
 memo=Animated Digital LED
 Label Offset=11,-14,11,-13
 PinCnt=1
@@ -218,7 +218,7 @@ Name=And2
 Definition=AND
 Shape=And2
 Mask=4867
-Used=170
+Used=298
 Data1=2
 memo=2 Input Generic AND Gate
 Label Offset=12,21,8,8
@@ -318,7 +318,7 @@ Name=Inverter
 Definition=INV
 Shape=Inv
 Mask=4611
-Used=47
+Used=164
 Data1=1
 memo=Generic Inverter Gate
 Label Offset=12,-6,11,21
@@ -436,7 +436,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,448,1384,448
+Pxs=1368,448,1376,448
 
 [Comp]
 Name=And2
@@ -566,7 +566,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,448,1552,448
+Pxs=1536,448,1544,448
 
 [Comp]
 Name=And2
@@ -693,7 +693,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,448,1720,448
+Pxs=1704,448,1712,448
 
 [Comp]
 Name=And2
@@ -820,7 +820,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,448,1888,448
+Pxs=1872,448,1880,448
 
 [Comp]
 Name=And2
@@ -947,7 +947,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,448,2056,448
+Pxs=2040,448,2048,448
 
 [Comp]
 Name=And2
@@ -1071,7 +1071,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,448,2224,448
+Pxs=2208,448,2216,448
 
 [Comp]
 Name=And2
@@ -1117,16 +1117,16 @@ Pxs=2160,392,2176,392
 Pxs=2168,408,2176,408
 
 [Wire]
-Pxs=2168,408,2168,536
+Pxs=2168,408,2168,480
 
 [Wire]
 Pxs=2160,352,2160,392
 
 [Wire]
-Pxs=2160,352,2328,352
+Pxs=2160,352,2168,352
 
 [Wire]
-Pxs=2168,328,2168,408
+Pxs=2168,328,2168,352
 
 [Wire]
 Pxs=2208,304,2208,448
@@ -1198,7 +1198,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,448,2392,448
+Pxs=2376,448,2384,448
 
 [Comp]
 Name=And2
@@ -1325,7 +1325,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,448,2560,448
+Pxs=2544,448,2552,448
 
 [Comp]
 Name=And2
@@ -2196,7 +2196,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,576,1384,576
+Pxs=1368,576,1376,576
 
 [Comp]
 Name=And2
@@ -2248,7 +2248,7 @@ Pxs=1328,536,1328,664
 Pxs=1320,480,1320,520
 
 [Wire]
-Pxs=1320,480,1488,480
+Pxs=1320,480,1384,480
 
 [Wire]
 Pxs=1272,480,1320,480
@@ -2320,7 +2320,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,576,1552,576
+Pxs=1536,576,1544,576
 
 [Comp]
 Name=And2
@@ -2441,7 +2441,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,576,1720,576
+Pxs=1704,576,1712,576
 
 [Comp]
 Name=And2
@@ -2562,7 +2562,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,576,1888,576
+Pxs=1872,576,1880,576
 
 [Comp]
 Name=And2
@@ -2683,7 +2683,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,576,2056,576
+Pxs=2040,576,2048,576
 
 [Comp]
 Name=And2
@@ -2804,7 +2804,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,576,2224,576
+Pxs=2208,576,2216,576
 
 [Comp]
 Name=And2
@@ -2850,13 +2850,13 @@ Pxs=2160,520,2176,520
 Pxs=2168,536,2176,536
 
 [Wire]
-Pxs=2168,536,2168,664
+Pxs=2168,536,2168,608
 
 [Wire]
 Pxs=2160,480,2160,520
 
 [Wire]
-Pxs=2160,480,2328,480
+Pxs=2160,480,2168,480
 
 [Wire]
 Pxs=2208,576,2208,704
@@ -2925,7 +2925,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,576,2392,576
+Pxs=2376,576,2384,576
 
 [Comp]
 Name=And2
@@ -3046,7 +3046,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,576,2560,576
+Pxs=2544,576,2552,576
 
 [Comp]
 Name=And2
@@ -3167,7 +3167,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,704,1384,704
+Pxs=1368,704,1376,704
 
 [Comp]
 Name=And2
@@ -3291,7 +3291,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,704,1552,704
+Pxs=1536,704,1544,704
 
 [Comp]
 Name=And2
@@ -3412,7 +3412,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,704,1720,704
+Pxs=1704,704,1712,704
 
 [Comp]
 Name=And2
@@ -3533,7 +3533,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,704,1888,704
+Pxs=1872,704,1880,704
 
 [Comp]
 Name=And2
@@ -3654,7 +3654,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,704,2056,704
+Pxs=2040,704,2048,704
 
 [Comp]
 Name=And2
@@ -3775,7 +3775,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,704,2224,704
+Pxs=2208,704,2216,704
 
 [Comp]
 Name=And2
@@ -3821,13 +3821,13 @@ Pxs=2160,648,2176,648
 Pxs=2168,664,2176,664
 
 [Wire]
-Pxs=2168,664,2168,792
+Pxs=2168,664,2168,736
 
 [Wire]
 Pxs=2160,608,2160,648
 
 [Wire]
-Pxs=2160,608,2328,608
+Pxs=2160,608,2168,608
 
 [Wire]
 Pxs=2208,704,2208,832
@@ -3896,7 +3896,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,704,2392,704
+Pxs=2376,704,2384,704
 
 [Comp]
 Name=And2
@@ -4017,7 +4017,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,704,2560,704
+Pxs=2544,704,2552,704
 
 [Comp]
 Name=And2
@@ -4138,7 +4138,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,832,1384,832
+Pxs=1368,832,1376,832
 
 [Comp]
 Name=And2
@@ -4262,7 +4262,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,832,1552,832
+Pxs=1536,832,1544,832
 
 [Comp]
 Name=And2
@@ -4383,7 +4383,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,832,1720,832
+Pxs=1704,832,1712,832
 
 [Comp]
 Name=And2
@@ -4504,7 +4504,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,832,1888,832
+Pxs=1872,832,1880,832
 
 [Comp]
 Name=And2
@@ -4625,7 +4625,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,832,2056,832
+Pxs=2040,832,2048,832
 
 [Comp]
 Name=And2
@@ -4746,7 +4746,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,832,2224,832
+Pxs=2208,832,2216,832
 
 [Comp]
 Name=And2
@@ -4792,13 +4792,13 @@ Pxs=2160,776,2176,776
 Pxs=2168,792,2176,792
 
 [Wire]
-Pxs=2168,792,2168,920
+Pxs=2168,792,2168,864
 
 [Wire]
 Pxs=2160,736,2160,776
 
 [Wire]
-Pxs=2160,736,2328,736
+Pxs=2160,736,2168,736
 
 [Wire]
 Pxs=2208,832,2208,960
@@ -4867,7 +4867,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,832,2392,832
+Pxs=2376,832,2384,832
 
 [Comp]
 Name=And2
@@ -4988,7 +4988,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,832,2560,832
+Pxs=2544,832,2552,832
 
 [Comp]
 Name=And2
@@ -5109,7 +5109,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,960,1384,960
+Pxs=1368,960,1376,960
 
 [Comp]
 Name=And2
@@ -5233,7 +5233,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,960,1552,960
+Pxs=1536,960,1544,960
 
 [Comp]
 Name=And2
@@ -5351,7 +5351,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,960,1720,960
+Pxs=1704,960,1712,960
 
 [Comp]
 Name=And2
@@ -5472,7 +5472,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,960,1888,960
+Pxs=1872,960,1880,960
 
 [Comp]
 Name=And2
@@ -5593,7 +5593,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,960,2056,960
+Pxs=2040,960,2048,960
 
 [Comp]
 Name=And2
@@ -5714,7 +5714,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,960,2224,960
+Pxs=2208,960,2216,960
 
 [Comp]
 Name=And2
@@ -5760,13 +5760,13 @@ Pxs=2160,904,2176,904
 Pxs=2168,920,2176,920
 
 [Wire]
-Pxs=2168,920,2168,1048
+Pxs=2168,920,2168,992
 
 [Wire]
 Pxs=2160,864,2160,904
 
 [Wire]
-Pxs=2160,864,2328,864
+Pxs=2160,864,2168,864
 
 [Wire]
 Pxs=2208,960,2208,1088
@@ -5835,7 +5835,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,960,2392,960
+Pxs=2376,960,2384,960
 
 [Comp]
 Name=And2
@@ -5956,7 +5956,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,960,2560,960
+Pxs=2544,960,2552,960
 
 [Comp]
 Name=And2
@@ -6077,7 +6077,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,1088,1384,1088
+Pxs=1368,1088,1376,1088
 
 [Comp]
 Name=And2
@@ -6201,7 +6201,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,1088,1552,1088
+Pxs=1536,1088,1544,1088
 
 [Comp]
 Name=And2
@@ -6319,7 +6319,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,1088,1720,1088
+Pxs=1704,1088,1712,1088
 
 [Comp]
 Name=And2
@@ -6440,7 +6440,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,1088,1888,1088
+Pxs=1872,1088,1880,1088
 
 [Comp]
 Name=And2
@@ -6561,7 +6561,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,1088,2056,1088
+Pxs=2040,1088,2048,1088
 
 [Comp]
 Name=And2
@@ -6682,7 +6682,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,1088,2224,1088
+Pxs=2208,1088,2216,1088
 
 [Comp]
 Name=And2
@@ -6728,13 +6728,13 @@ Pxs=2160,1032,2176,1032
 Pxs=2168,1048,2176,1048
 
 [Wire]
-Pxs=2168,1048,2168,1176
+Pxs=2168,1048,2168,1120
 
 [Wire]
 Pxs=2160,992,2160,1032
 
 [Wire]
-Pxs=2160,992,2328,992
+Pxs=2160,992,2168,992
 
 [Wire]
 Pxs=2208,1088,2208,1216
@@ -6803,7 +6803,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,1088,2392,1088
+Pxs=2376,1088,2384,1088
 
 [Comp]
 Name=And2
@@ -6924,7 +6924,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,1088,2560,1088
+Pxs=2544,1088,2552,1088
 
 [Comp]
 Name=And2
@@ -7045,7 +7045,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,1216,1384,1216
+Pxs=1368,1216,1376,1216
 
 [Comp]
 Name=And2
@@ -7169,7 +7169,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,1216,1552,1216
+Pxs=1536,1216,1544,1216
 
 [Comp]
 Name=And2
@@ -7287,7 +7287,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,1216,1720,1216
+Pxs=1704,1216,1712,1216
 
 [Comp]
 Name=And2
@@ -7408,7 +7408,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,1216,1888,1216
+Pxs=1872,1216,1880,1216
 
 [Comp]
 Name=And2
@@ -7529,7 +7529,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,1216,2056,1216
+Pxs=2040,1216,2048,1216
 
 [Comp]
 Name=And2
@@ -7650,7 +7650,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,1216,2224,1216
+Pxs=2208,1216,2216,1216
 
 [Comp]
 Name=And2
@@ -7702,7 +7702,7 @@ Pxs=2168,1176,2168,1304
 Pxs=2160,1120,2160,1160
 
 [Wire]
-Pxs=2160,1120,2328,1120
+Pxs=2160,1120,2168,1120
 
 [Wire]
 Pxs=2208,1216,2208,1344
@@ -7771,7 +7771,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,1216,2392,1216
+Pxs=2376,1216,2384,1216
 
 [Comp]
 Name=And2
@@ -7892,7 +7892,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,1216,2560,1216
+Pxs=2544,1216,2552,1216
 
 [Comp]
 Name=And2
@@ -8013,7 +8013,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1368,1344,1384,1344
+Pxs=1368,1344,1376,1344
 
 [Comp]
 Name=And2
@@ -8137,7 +8137,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1536,1344,1552,1344
+Pxs=1536,1344,1544,1344
 
 [Comp]
 Name=And2
@@ -8258,7 +8258,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1704,1344,1720,1344
+Pxs=1704,1344,1712,1344
 
 [Comp]
 Name=And2
@@ -8379,7 +8379,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1872,1344,1888,1344
+Pxs=1872,1344,1880,1344
 
 [Comp]
 Name=And2
@@ -8500,7 +8500,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2040,1344,2056,1344
+Pxs=2040,1344,2048,1344
 
 [Comp]
 Name=And2
@@ -8621,7 +8621,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2208,1344,2224,1344
+Pxs=2208,1344,2216,1344
 
 [Comp]
 Name=And2
@@ -8742,7 +8742,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2376,1344,2392,1344
+Pxs=2376,1344,2384,1344
 
 [Comp]
 Name=And2
@@ -8863,7 +8863,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2544,1344,2560,1344
+Pxs=2544,1344,2552,1344
 
 [Comp]
 Name=And2
@@ -9660,12 +9660,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1384,472,1424,472
-
-[Wire]
-Pxs=1384,448,1384,472
-
-[Wire]
 Pxs=1352,424,1384,424
 
 [Wire]
@@ -9708,12 +9702,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1384,600,1424,600
-
-[Wire]
-Pxs=1384,576,1384,600
 
 [Wire]
 Pxs=1352,552,1384,552
@@ -9760,12 +9748,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1384,728,1424,728
-
-[Wire]
-Pxs=1384,704,1384,728
-
-[Wire]
 Pxs=1352,680,1384,680
 
 [Comp]
@@ -9805,12 +9787,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1384,856,1424,856
-
-[Wire]
-Pxs=1384,832,1384,856
 
 [Wire]
 Pxs=1352,808,1384,808
@@ -9860,12 +9836,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1384,984,1424,984
-
-[Wire]
-Pxs=1384,960,1384,984
-
-[Wire]
 Pxs=1352,936,1384,936
 
 [Comp]
@@ -9905,12 +9875,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1384,1112,1424,1112
-
-[Wire]
-Pxs=1384,1088,1384,1112
 
 [Wire]
 Pxs=1352,1064,1384,1064
@@ -9957,12 +9921,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1384,1240,1424,1240
-
-[Wire]
-Pxs=1384,1216,1384,1240
-
-[Wire]
 Pxs=1352,1192,1384,1192
 
 [Comp]
@@ -10002,12 +9960,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1384,1368,1424,1368
-
-[Wire]
-Pxs=1384,1344,1384,1368
 
 [Wire]
 Pxs=1352,1320,1384,1320
@@ -10066,12 +10018,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1552,472,1592,472
-
-[Wire]
-Pxs=1552,448,1552,472
-
-[Wire]
 Pxs=1520,424,1552,424
 
 [Wire]
@@ -10114,12 +10060,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1552,600,1592,600
-
-[Wire]
-Pxs=1552,576,1552,600
 
 [Wire]
 Pxs=1520,552,1552,552
@@ -10166,12 +10106,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1552,728,1592,728
-
-[Wire]
-Pxs=1552,704,1552,728
-
-[Wire]
 Pxs=1520,680,1552,680
 
 [Comp]
@@ -10211,12 +10145,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1552,856,1592,856
-
-[Wire]
-Pxs=1552,832,1552,856
 
 [Wire]
 Pxs=1520,808,1552,808
@@ -10266,12 +10194,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1552,984,1592,984
-
-[Wire]
-Pxs=1552,960,1552,984
-
-[Wire]
 Pxs=1520,936,1552,936
 
 [Comp]
@@ -10311,12 +10233,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1552,1112,1592,1112
-
-[Wire]
-Pxs=1552,1088,1552,1112
 
 [Wire]
 Pxs=1520,1064,1552,1064
@@ -10363,12 +10279,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1552,1240,1592,1240
-
-[Wire]
-Pxs=1552,1216,1552,1240
-
-[Wire]
 Pxs=1520,1192,1552,1192
 
 [Comp]
@@ -10408,12 +10318,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1552,1368,1592,1368
-
-[Wire]
-Pxs=1552,1344,1552,1368
 
 [Wire]
 Pxs=1520,1320,1552,1320
@@ -10469,12 +10373,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1720,472,1760,472
-
-[Wire]
-Pxs=1720,448,1720,472
-
-[Wire]
 Pxs=1688,424,1720,424
 
 [Wire]
@@ -10517,12 +10415,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1720,600,1760,600
-
-[Wire]
-Pxs=1720,576,1720,600
 
 [Wire]
 Pxs=1688,552,1720,552
@@ -10569,12 +10461,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1720,728,1760,728
-
-[Wire]
-Pxs=1720,704,1720,728
-
-[Wire]
 Pxs=1688,680,1720,680
 
 [Comp]
@@ -10614,12 +10500,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1720,856,1760,856
-
-[Wire]
-Pxs=1720,832,1720,856
 
 [Wire]
 Pxs=1688,808,1720,808
@@ -10669,12 +10549,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1720,984,1760,984
-
-[Wire]
-Pxs=1720,960,1720,984
-
-[Wire]
 Pxs=1688,936,1720,936
 
 [Comp]
@@ -10714,12 +10588,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1720,1112,1760,1112
-
-[Wire]
-Pxs=1720,1088,1720,1112
 
 [Wire]
 Pxs=1688,1064,1720,1064
@@ -10766,12 +10634,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1720,1240,1760,1240
-
-[Wire]
-Pxs=1720,1216,1720,1240
-
-[Wire]
 Pxs=1688,1192,1720,1192
 
 [Comp]
@@ -10811,12 +10673,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1720,1368,1760,1368
-
-[Wire]
-Pxs=1720,1344,1720,1368
 
 [Wire]
 Pxs=1688,1320,1720,1320
@@ -10869,12 +10725,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1888,472,1928,472
-
-[Wire]
-Pxs=1888,448,1888,472
-
-[Wire]
 Pxs=1856,424,1888,424
 
 [Wire]
@@ -10917,12 +10767,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1888,600,1928,600
-
-[Wire]
-Pxs=1888,576,1888,600
 
 [Wire]
 Pxs=1856,552,1888,552
@@ -10969,12 +10813,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1888,728,1928,728
-
-[Wire]
-Pxs=1888,704,1888,728
-
-[Wire]
 Pxs=1856,680,1888,680
 
 [Comp]
@@ -11014,12 +10852,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1888,856,1928,856
-
-[Wire]
-Pxs=1888,832,1888,856
 
 [Wire]
 Pxs=1856,808,1888,808
@@ -11069,12 +10901,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1888,984,1928,984
-
-[Wire]
-Pxs=1888,960,1888,984
-
-[Wire]
 Pxs=1856,936,1888,936
 
 [Comp]
@@ -11114,12 +10940,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1888,1112,1928,1112
-
-[Wire]
-Pxs=1888,1088,1888,1112
 
 [Wire]
 Pxs=1856,1064,1888,1064
@@ -11166,12 +10986,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1888,1240,1928,1240
-
-[Wire]
-Pxs=1888,1216,1888,1240
-
-[Wire]
 Pxs=1856,1192,1888,1192
 
 [Comp]
@@ -11211,12 +11025,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1888,1368,1928,1368
-
-[Wire]
-Pxs=1888,1344,1888,1368
 
 [Wire]
 Pxs=1856,1320,1888,1320
@@ -11269,12 +11077,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2056,472,2096,472
-
-[Wire]
-Pxs=2056,448,2056,472
-
-[Wire]
 Pxs=2024,424,2056,424
 
 [Wire]
@@ -11317,12 +11119,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2056,600,2096,600
-
-[Wire]
-Pxs=2056,576,2056,600
 
 [Wire]
 Pxs=2024,552,2056,552
@@ -11369,12 +11165,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2056,728,2096,728
-
-[Wire]
-Pxs=2056,704,2056,728
-
-[Wire]
 Pxs=2024,680,2056,680
 
 [Comp]
@@ -11414,12 +11204,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2056,856,2096,856
-
-[Wire]
-Pxs=2056,832,2056,856
 
 [Wire]
 Pxs=2024,808,2056,808
@@ -11469,12 +11253,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2056,984,2096,984
-
-[Wire]
-Pxs=2056,960,2056,984
-
-[Wire]
 Pxs=2024,936,2056,936
 
 [Comp]
@@ -11514,12 +11292,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2056,1112,2096,1112
-
-[Wire]
-Pxs=2056,1088,2056,1112
 
 [Wire]
 Pxs=2024,1064,2056,1064
@@ -11566,12 +11338,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2056,1240,2096,1240
-
-[Wire]
-Pxs=2056,1216,2056,1240
-
-[Wire]
 Pxs=2024,1192,2056,1192
 
 [Comp]
@@ -11611,12 +11377,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2056,1368,2096,1368
-
-[Wire]
-Pxs=2056,1344,2056,1368
 
 [Wire]
 Pxs=2024,1320,2056,1320
@@ -11669,12 +11429,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2224,472,2264,472
-
-[Wire]
-Pxs=2224,448,2224,472
-
-[Wire]
 Pxs=2192,424,2224,424
 
 [Wire]
@@ -11717,12 +11471,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2224,600,2264,600
-
-[Wire]
-Pxs=2224,576,2224,600
 
 [Wire]
 Pxs=2192,552,2224,552
@@ -11769,12 +11517,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2224,728,2264,728
-
-[Wire]
-Pxs=2224,704,2224,728
-
-[Wire]
 Pxs=2192,680,2224,680
 
 [Comp]
@@ -11814,12 +11556,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2224,856,2264,856
-
-[Wire]
-Pxs=2224,832,2224,856
 
 [Wire]
 Pxs=2192,808,2224,808
@@ -11869,12 +11605,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2224,984,2264,984
-
-[Wire]
-Pxs=2224,960,2224,984
-
-[Wire]
 Pxs=2192,936,2224,936
 
 [Comp]
@@ -11914,12 +11644,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2224,1112,2264,1112
-
-[Wire]
-Pxs=2224,1088,2224,1112
 
 [Wire]
 Pxs=2192,1064,2224,1064
@@ -11966,12 +11690,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2224,1240,2264,1240
-
-[Wire]
-Pxs=2224,1216,2224,1240
-
-[Wire]
 Pxs=2192,1192,2224,1192
 
 [Comp]
@@ -12011,12 +11729,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2224,1368,2264,1368
-
-[Wire]
-Pxs=2224,1344,2224,1368
 
 [Wire]
 Pxs=2192,1320,2224,1320
@@ -12069,12 +11781,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2392,472,2432,472
-
-[Wire]
-Pxs=2392,448,2392,472
-
-[Wire]
 Pxs=2360,424,2392,424
 
 [Wire]
@@ -12117,12 +11823,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2392,600,2432,600
-
-[Wire]
-Pxs=2392,576,2392,600
 
 [Wire]
 Pxs=2360,552,2392,552
@@ -12169,12 +11869,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2392,728,2432,728
-
-[Wire]
-Pxs=2392,704,2392,728
-
-[Wire]
 Pxs=2360,680,2392,680
 
 [Comp]
@@ -12214,12 +11908,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2392,856,2432,856
-
-[Wire]
-Pxs=2392,832,2392,856
 
 [Wire]
 Pxs=2360,808,2392,808
@@ -12269,12 +11957,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2392,984,2432,984
-
-[Wire]
-Pxs=2392,960,2392,984
-
-[Wire]
 Pxs=2360,936,2392,936
 
 [Comp]
@@ -12314,12 +11996,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2392,1112,2432,1112
-
-[Wire]
-Pxs=2392,1088,2392,1112
 
 [Wire]
 Pxs=2360,1064,2392,1064
@@ -12366,12 +12042,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2392,1240,2432,1240
-
-[Wire]
-Pxs=2392,1216,2392,1240
-
-[Wire]
 Pxs=2360,1192,2392,1192
 
 [Comp]
@@ -12411,12 +12081,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2392,1368,2432,1368
-
-[Wire]
-Pxs=2392,1344,2392,1368
 
 [Wire]
 Pxs=2360,1320,2392,1320
@@ -12469,12 +12133,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2560,472,2600,472
-
-[Wire]
-Pxs=2560,448,2560,472
-
-[Wire]
 Pxs=2528,424,2560,424
 
 [Wire]
@@ -12517,12 +12175,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2560,600,2600,600
-
-[Wire]
-Pxs=2560,576,2560,600
 
 [Wire]
 Pxs=2528,552,2560,552
@@ -12569,12 +12221,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2560,728,2600,728
-
-[Wire]
-Pxs=2560,704,2560,728
-
-[Wire]
 Pxs=2528,680,2560,680
 
 [Comp]
@@ -12614,12 +12260,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2560,856,2600,856
-
-[Wire]
-Pxs=2560,832,2560,856
 
 [Wire]
 Pxs=2528,808,2560,808
@@ -12669,12 +12309,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2560,984,2600,984
-
-[Wire]
-Pxs=2560,960,2560,984
-
-[Wire]
 Pxs=2528,936,2560,936
 
 [Comp]
@@ -12717,9 +12351,6 @@ V
 
 [Wire]
 Pxs=2560,1112,2600,1112
-
-[Wire]
-Pxs=2560,1088,2560,1112
 
 [Wire]
 Pxs=2528,1064,2560,1064
@@ -12766,12 +12397,6 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=2560,1240,2600,1240
-
-[Wire]
-Pxs=2560,1216,2560,1240
-
-[Wire]
 Pxs=2528,1192,2560,1192
 
 [Comp]
@@ -12811,12 +12436,6 @@ V=$G_DGND
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=2560,1368,2600,1368
-
-[Wire]
-Pxs=2560,1344,2560,1368
 
 [Wire]
 Pxs=2528,1320,2560,1320
@@ -12872,6 +12491,2803 @@ Pxs=1160,240,1208,240
 [Wire]
 Pxs=1160,232,1160,240
 
+[Wire]
+Pxs=1376,448,1376,472
+
+[Wire]
+Pxs=1376,448,1384,448
+
+[Comp]
+Name=Inverter
+Px=1376,472
+
+[Attr]
+ON=11,-8,PART
+V=U581
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,576,1376,600
+
+[Comp]
+Name=Inverter
+Px=1376,600
+
+[Attr]
+ON=11,-8,PART
+V=U582
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1432,480,1488,480
+
+[Wire]
+Pxs=1376,576,1384,576
+
+[Wire]
+Pxs=1376,704,1376,728
+
+[Comp]
+Name=Inverter
+Px=1376,728
+
+[Attr]
+ON=11,-8,PART
+V=U583
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,704,1384,704
+
+[Wire]
+Pxs=1376,832,1376,856
+
+[Comp]
+Name=Inverter
+Px=1376,856
+
+[Attr]
+ON=11,-8,PART
+V=U584
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,832,1384,832
+
+[Wire]
+Pxs=1376,960,1376,984
+
+[Comp]
+Name=Inverter
+Px=1376,984
+
+[Attr]
+ON=11,-8,PART
+V=U585
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,1088,1376,1112
+
+[Comp]
+Name=Inverter
+Px=1376,1112
+
+[Attr]
+ON=11,-8,PART
+V=U586
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,1216,1376,1240
+
+[Comp]
+Name=Inverter
+Px=1376,1240
+
+[Attr]
+ON=11,-8,PART
+V=U587
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,1344,1376,1368
+
+[Comp]
+Name=Inverter
+Px=1376,1368
+
+[Attr]
+ON=11,-8,PART
+V=U588
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1376,960,1384,960
+
+[Wire]
+Pxs=1376,1088,1384,1088
+
+[Wire]
+Pxs=1376,1216,1384,1216
+
+[Wire]
+Pxs=1376,1344,1384,1344
+
+[Wire]
+Pxs=1544,448,1544,472
+
+[Comp]
+Name=Inverter
+Px=1544,472
+
+[Attr]
+ON=11,-8,PART
+V=U589
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,576,1544,600
+
+[Comp]
+Name=Inverter
+Px=1544,600
+
+[Attr]
+ON=11,-8,PART
+V=U590
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,704,1544,728
+
+[Comp]
+Name=Inverter
+Px=1544,728
+
+[Attr]
+ON=11,-8,PART
+V=U591
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,832,1544,856
+
+[Comp]
+Name=Inverter
+Px=1544,856
+
+[Attr]
+ON=11,-8,PART
+V=U592
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,960,1544,984
+
+[Comp]
+Name=Inverter
+Px=1544,984
+
+[Attr]
+ON=11,-8,PART
+V=U593
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,1088,1544,1112
+
+[Comp]
+Name=Inverter
+Px=1544,1112
+
+[Attr]
+ON=11,-8,PART
+V=U594
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,1216,1544,1240
+
+[Comp]
+Name=Inverter
+Px=1544,1240
+
+[Attr]
+ON=11,-8,PART
+V=U595
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,1344,1544,1368
+
+[Comp]
+Name=Inverter
+Px=1544,1368
+
+[Attr]
+ON=11,-8,PART
+V=U596
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1544,448,1552,448
+
+[Wire]
+Pxs=1544,576,1552,576
+
+[Wire]
+Pxs=1544,704,1552,704
+
+[Wire]
+Pxs=1544,832,1552,832
+
+[Wire]
+Pxs=1544,960,1552,960
+
+[Wire]
+Pxs=1544,1088,1552,1088
+
+[Wire]
+Pxs=1544,1216,1552,1216
+
+[Wire]
+Pxs=1544,1344,1552,1344
+
+[Wire]
+Pxs=1712,448,1712,472
+
+[Comp]
+Name=Inverter
+Px=1712,472
+
+[Attr]
+ON=11,-8,PART
+V=U605
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,576,1712,600
+
+[Comp]
+Name=Inverter
+Px=1712,600
+
+[Attr]
+ON=11,-8,PART
+V=U606
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,704,1712,728
+
+[Comp]
+Name=Inverter
+Px=1712,728
+
+[Attr]
+ON=11,-8,PART
+V=U607
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,832,1712,856
+
+[Comp]
+Name=Inverter
+Px=1712,856
+
+[Attr]
+ON=11,-8,PART
+V=U608
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,960,1712,984
+
+[Comp]
+Name=Inverter
+Px=1712,984
+
+[Attr]
+ON=11,-8,PART
+V=U609
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,1088,1712,1112
+
+[Comp]
+Name=Inverter
+Px=1712,1112
+
+[Attr]
+ON=11,-8,PART
+V=U610
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,1216,1712,1240
+
+[Comp]
+Name=Inverter
+Px=1712,1240
+
+[Attr]
+ON=11,-8,PART
+V=U611
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,1344,1712,1368
+
+[Comp]
+Name=Inverter
+Px=1712,1368
+
+[Attr]
+ON=11,-8,PART
+V=U612
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1712,448,1720,448
+
+[Wire]
+Pxs=1712,576,1720,576
+
+[Wire]
+Pxs=1712,704,1720,704
+
+[Wire]
+Pxs=1712,832,1720,832
+
+[Wire]
+Pxs=1712,960,1720,960
+
+[Wire]
+Pxs=1712,1088,1720,1088
+
+[Wire]
+Pxs=1712,1216,1720,1216
+
+[Wire]
+Pxs=1712,1344,1720,1344
+
+[Wire]
+Pxs=1880,448,1880,472
+
+[Comp]
+Name=Inverter
+Px=1880,472
+
+[Attr]
+ON=11,-8,PART
+V=U613
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-56,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-56,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-56,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,576,1880,600
+
+[Comp]
+Name=Inverter
+Px=1880,600
+
+[Attr]
+ON=11,-8,PART
+V=U614
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,704,1880,728
+
+[Comp]
+Name=Inverter
+Px=1880,728
+
+[Attr]
+ON=11,-8,PART
+V=U615
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,832,1880,856
+
+[Comp]
+Name=Inverter
+Px=1880,856
+
+[Attr]
+ON=11,-8,PART
+V=U616
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,960,1880,984
+
+[Comp]
+Name=Inverter
+Px=1880,984
+
+[Attr]
+ON=11,-8,PART
+V=U617
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,1088,1880,1112
+
+[Comp]
+Name=Inverter
+Px=1880,1112
+
+[Attr]
+ON=11,-8,PART
+V=U618
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,1216,1880,1240
+
+[Comp]
+Name=Inverter
+Px=1880,1240
+
+[Attr]
+ON=11,-8,PART
+V=U619
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,1344,1880,1368
+
+[Comp]
+Name=Inverter
+Px=1880,1368
+
+[Attr]
+ON=11,-8,PART
+V=U620
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1880,448,1888,448
+
+[Wire]
+Pxs=1880,576,1888,576
+
+[Wire]
+Pxs=1880,704,1888,704
+
+[Wire]
+Pxs=1880,832,1888,832
+
+[Wire]
+Pxs=1880,960,1888,960
+
+[Wire]
+Pxs=1880,1088,1888,1088
+
+[Wire]
+Pxs=1880,1216,1888,1216
+
+[Wire]
+Pxs=1880,1344,1888,1344
+
+[Wire]
+Pxs=2048,448,2048,472
+
+[Comp]
+Name=Inverter
+Px=2048,472
+
+[Attr]
+ON=11,-8,PART
+V=U621
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,576,2048,600
+
+[Comp]
+Name=Inverter
+Px=2048,600
+
+[Attr]
+ON=11,-8,PART
+V=U622
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,704,2048,728
+
+[Comp]
+Name=Inverter
+Px=2048,728
+
+[Attr]
+ON=11,-8,PART
+V=U623
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,832,2048,856
+
+[Comp]
+Name=Inverter
+Px=2048,856
+
+[Attr]
+ON=11,-8,PART
+V=U624
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,960,2048,984
+
+[Comp]
+Name=Inverter
+Px=2048,984
+
+[Attr]
+ON=11,-8,PART
+V=U625
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,1088,2048,1112
+
+[Comp]
+Name=Inverter
+Px=2048,1112
+
+[Attr]
+ON=11,-8,PART
+V=U626
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,1216,2048,1240
+
+[Comp]
+Name=Inverter
+Px=2048,1240
+
+[Attr]
+ON=11,-8,PART
+V=U627
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2168,352,2168,408
+
+[Wire]
+Pxs=2168,352,2328,352
+
+[Wire]
+Pxs=2168,480,2168,536
+
+[Wire]
+Pxs=2168,480,2328,480
+
+[Wire]
+Pxs=2168,608,2168,664
+
+[Wire]
+Pxs=2168,608,2328,608
+
+[Wire]
+Pxs=2168,736,2168,792
+
+[Wire]
+Pxs=2168,736,2328,736
+
+[Wire]
+Pxs=2168,864,2168,920
+
+[Wire]
+Pxs=2168,864,2328,864
+
+[Wire]
+Pxs=2168,992,2168,1048
+
+[Wire]
+Pxs=2168,992,2328,992
+
+[Wire]
+Pxs=2168,1120,2168,1176
+
+[Wire]
+Pxs=2168,1120,2328,1120
+
+[Wire]
+Pxs=2048,448,2056,448
+
+[Wire]
+Pxs=2048,576,2056,576
+
+[Wire]
+Pxs=2048,704,2056,704
+
+[Wire]
+Pxs=2048,832,2056,832
+
+[Wire]
+Pxs=2048,960,2056,960
+
+[Wire]
+Pxs=2048,1088,2056,1088
+
+[Wire]
+Pxs=2048,1216,2056,1216
+
+[Wire]
+Pxs=2216,576,2216,600
+
+[Comp]
+Name=Inverter
+Px=2216,600
+
+[Attr]
+ON=11,-8,PART
+V=U628
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,704,2216,728
+
+[Comp]
+Name=Inverter
+Px=2216,728
+
+[Attr]
+ON=11,-8,PART
+V=U629
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,832,2216,856
+
+[Comp]
+Name=Inverter
+Px=2216,856
+
+[Attr]
+ON=11,-8,PART
+V=U630
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,960,2216,984
+
+[Comp]
+Name=Inverter
+Px=2216,984
+
+[Attr]
+ON=11,-8,PART
+V=U631
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,1088,2216,1112
+
+[Comp]
+Name=Inverter
+Px=2216,1112
+
+[Attr]
+ON=11,-8,PART
+V=U632
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,1216,2216,1240
+
+[Comp]
+Name=Inverter
+Px=2216,1240
+
+[Attr]
+ON=11,-8,PART
+V=U633
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,1344,2216,1368
+
+[Comp]
+Name=Inverter
+Px=2216,1368
+
+[Attr]
+ON=11,-8,PART
+V=U634
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,576,2224,576
+
+[Wire]
+Pxs=2216,704,2224,704
+
+[Wire]
+Pxs=2216,832,2224,832
+
+[Wire]
+Pxs=2216,960,2224,960
+
+[Wire]
+Pxs=2216,1088,2224,1088
+
+[Wire]
+Pxs=2216,1216,2224,1216
+
+[Wire]
+Pxs=2216,1344,2224,1344
+
+[Wire]
+Pxs=2048,1344,2048,1368
+
+[Comp]
+Name=Inverter
+Px=2048,1368
+
+[Attr]
+ON=11,-8,PART
+V=U635
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2048,1344,2056,1344
+
+[Wire]
+Pxs=2216,448,2216,472
+
+[Comp]
+Name=Inverter
+Px=2216,472
+
+[Attr]
+ON=11,-8,PART
+V=U636
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2216,448,2224,448
+
+[Wire]
+Pxs=2384,448,2384,472
+
+[Comp]
+Name=Inverter
+Px=2384,472
+
+[Attr]
+ON=11,-8,PART
+V=U637
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,576,2384,600
+
+[Comp]
+Name=Inverter
+Px=2384,600
+
+[Attr]
+ON=11,-8,PART
+V=U638
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,704,2384,728
+
+[Comp]
+Name=Inverter
+Px=2384,728
+
+[Attr]
+ON=11,-8,PART
+V=U639
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,832,2384,856
+
+[Comp]
+Name=Inverter
+Px=2384,856
+
+[Attr]
+ON=11,-8,PART
+V=U640
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,960,2384,984
+
+[Comp]
+Name=Inverter
+Px=2384,984
+
+[Attr]
+ON=11,-8,PART
+V=U641
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,1088,2384,1112
+
+[Comp]
+Name=Inverter
+Px=2384,1112
+
+[Attr]
+ON=11,-8,PART
+V=U642
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,1216,2384,1240
+
+[Comp]
+Name=Inverter
+Px=2384,1240
+
+[Attr]
+ON=11,-8,PART
+V=U643
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,1344,2384,1368
+
+[Comp]
+Name=Inverter
+Px=2384,1368
+
+[Attr]
+ON=11,-8,PART
+V=U644
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2384,448,2392,448
+
+[Wire]
+Pxs=2384,576,2392,576
+
+[Wire]
+Pxs=2384,704,2392,704
+
+[Wire]
+Pxs=2384,832,2392,832
+
+[Wire]
+Pxs=2384,960,2392,960
+
+[Wire]
+Pxs=2384,1088,2392,1088
+
+[Wire]
+Pxs=2384,1216,2392,1216
+
+[Wire]
+Pxs=2384,1344,2392,1344
+
+[Wire]
+Pxs=2552,448,2552,472
+
+[Comp]
+Name=Inverter
+Px=2552,472
+
+[Attr]
+ON=11,-8,PART
+V=U645
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,576,2552,600
+
+[Comp]
+Name=Inverter
+Px=2552,600
+
+[Attr]
+ON=11,-8,PART
+V=U646
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,704,2552,728
+
+[Comp]
+Name=Inverter
+Px=2552,728
+
+[Attr]
+ON=11,-8,PART
+V=U647
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,832,2552,856
+
+[Comp]
+Name=Inverter
+Px=2552,856
+
+[Attr]
+ON=11,-8,PART
+V=U648
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,960,2552,984
+
+[Comp]
+Name=Inverter
+Px=2552,984
+
+[Attr]
+ON=11,-8,PART
+V=U649
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,1088,2552,1112
+
+[Comp]
+Name=Inverter
+Px=2552,1112
+
+[Attr]
+ON=11,-8,PART
+V=U650
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,1216,2552,1240
+
+[Comp]
+Name=Inverter
+Px=2552,1240
+
+[Attr]
+ON=11,-8,PART
+V=U651
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,1344,2552,1368
+
+[Comp]
+Name=Inverter
+Px=2552,1368
+
+[Attr]
+ON=11,-8,PART
+V=U652
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2552,448,2560,448
+
+[Wire]
+Pxs=2552,576,2560,576
+
+[Wire]
+Pxs=2552,704,2560,704
+
+[Wire]
+Pxs=2552,832,2560,832
+
+[Wire]
+Pxs=2552,960,2560,960
+
+[Wire]
+Pxs=2552,1088,2560,1088
+
+[Wire]
+Pxs=2552,1216,2560,1216
+
+[Wire]
+Pxs=2552,1344,2560,1344
+
 [Grid Text]
 Text="CLK"
 Px=376,152
@@ -12888,7 +15304,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=0.66666666666666663
+Scale=2.6666666666666665
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -13076,9 +15492,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=1180,322
-Scale 3=0.66666666666666663
-Px=1391,471
+SB 3=769,196
+Scale 3=2.6666666666666665
+Px=3054,1849
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -13142,7 +15558,6 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=21,19
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -13171,9 +15586,9 @@ Section=0
 Page=1
 Text=
 Text=.define SET
-Text= +0ns 0
-Text= ++1ns 1
-Text= ++1ns 0 
+Text=+0ns 0
+Text=++1ns 1
+Text=++1ns 0
 
 [Text Area]
 Section=0
