@@ -19,16 +19,19 @@ def process_video(video_path):
         
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         # resized_frame = gray_frame
-        resized_frame = cv2.resize(gray_frame, (8, 8))
-        # thresholded_frame = cv2.threshold(resized_frame, 127, 255, cv2.THRESH_BINARY)[1]
-        thresholded_frame = np.where(resized_frame > 20, 1, 0)  # Convert values to 0 or 1
-        S = arr_to_str_frame(thresholded_frame)
+        resized_frame = cv2.resize(gray_frame, (16, 16))
+        thresholded_frame = cv2.threshold(resized_frame, 80, 255, cv2.THRESH_BINARY)[1]
+        thresholded_frame = np.where(thresholded_frame > 100, 1, 0)  # Convert values to 0 or 1
+        A0, A1, A2, A3 = split_arrays(thresholded_frame)
+        STR[0] += '\n'+arr_to_str_frame(A0)
+        STR[1] += '\n'+arr_to_str_frame(A1)
+        STR[2] += '\n'+arr_to_str_frame(A2)
+        STR[3] += '\n'+arr_to_str_frame(A3)
         if not fl:
             print(resized_frame)
             print(thresholded_frame)
-            print(S)
+            # print()
             fl |= True
-        STR += '\n'+S
         
         frames.append(thresholded_frame)
     
@@ -38,9 +41,10 @@ def process_video(video_path):
 global STR
 STEP = 100 #n
 STR = \
-""".define Count8 
+[""".define Count8 
  +0ns 00
-"""
+""" for i in range(4)]
+
 def byte_to_displacement(b, wait=STEP):
     S = hex(b)[2:].upper()
     bl = 0
@@ -80,15 +84,25 @@ def arr_to_str_frame(arr):
         S += s
     return S
 
+def split_arrays(original_array):
+    splitted_arrays = [
+        original_array[:8, :8],   # Array 1
+        original_array[:8, 8:],    # Array 3
+        original_array[8:, :8],    # Array 2
+        original_array[8:, 8:]     # Array 4
+    ]
+    return splitted_arrays
+
 if __name__ == '__main__':
     video_path = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/0001-0159.avi"
-    file_path  = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/frames.txt"
+    file_path  = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/frames/STR{0}.txt"
     save_path  = "C:/Users/Admin/Documents/MCTest/examples/Matrix/modules/convert video/photo"
     resulting_frames = process_video(video_path)
 
-    f = open(file_path, 'w')
-    f.write(STR)
-    f.close()
+    for i in range(4):
+        f = open(file_path.format(i), 'w')
+        f.write(STR[i])
+        f.close()
     i = 0
     for frame in resulting_frames:
         i += 1
